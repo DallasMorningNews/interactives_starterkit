@@ -612,7 +612,7 @@ XIV. SLIDESHOWS
   max-width: 1400px;
   overflow: hidden;
   position: relative;
-  width: 95%;
+  width: 100%;
 }
 
 .slide {
@@ -673,6 +673,7 @@ XIV. SLIDESHOWS
   .slideButton {
     width: 3rem;
     height: 3rem;
+    margin-top: -3rem;
   }
 }
 
