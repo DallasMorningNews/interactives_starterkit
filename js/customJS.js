@@ -26,6 +26,7 @@ $(document).ready(function() {
 		$nextButton = $('.nextButton'),
 		$previousButton = $('.previousButton'),
 		$slideCutline = $('.slide .cutline'),
+		$slideshow = $('.slideshow');
 		totalSlides = $('.slide').length;
 
 	// checks which image we're on in the slideshow
@@ -88,8 +89,8 @@ $(document).ready(function() {
 	// if you want to be able to swipe the slideshow on touch devices, un-note the following two lines
 	// and make sure you call jquery.swipe.min.js in the index file
 
-	// $nextButton.on("swipeleft", advanceSlide);
-	// $previousButton.on("swiperight", rewindSlide);
+	// $slideshow.on("swipeleft", advanceSlide);
+	// $slideshow.on("swiperight", rewindSlide);
 
 	UN-NOTE THIS LINE TOO */
 
