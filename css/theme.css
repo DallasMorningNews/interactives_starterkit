@@ -633,7 +633,6 @@ XIV. SLIDESHOWS
   cursor: pointer;
   display: block;
   height: 5rem;
-  margin-top: -5rem;
   opacity: .8;
   position: absolute;
   top: 50%;
@@ -673,7 +672,6 @@ XIV. SLIDESHOWS
   .slideButton {
     width: 3rem;
     height: 3rem;
-    margin-top: -3rem;
   }
 }
 
