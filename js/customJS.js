@@ -25,9 +25,11 @@ $(document).ready(function() {
 	var slideCounter = 0,
 		$nextButton = $('.nextButton'),
 		$previousButton = $('.previousButton'),
+		$slideButton = $('.slideButton');
 		$slideCutline = $('.slide .cutline'),
-		$slideshow = $('.slideshow');
-		totalSlides = $('.slide').length;
+		totalSlides = $('.slide').length,
+		$slideshow = $('.slideshow'),
+		slideHeight = $('.slide img').height();
 
 	// checks which image we're on in the slideshow
 	// if it's the first, hide the previous button
@@ -81,6 +83,9 @@ $(document).ready(function() {
 	//running the slidePosition initially to hide previous button
 	slidePosition();
 
+	//setting the slideshow button position to be halfway down the slideshow
+	$slideButton.css('top', ((slideHeight / 2) - ($slideButton.height() / 2) ) )
+
 	//binding click and swipe events to the next and previous button
 
 	$nextButton.on('click', advanceSlide);
@@ -89,8 +94,8 @@ $(document).ready(function() {
 	// if you want to be able to swipe the slideshow on touch devices, un-note the following two lines
 	// and make sure you call jquery.swipe.min.js in the index file
 
-	// $slideshow.on("swipeleft", advanceSlide);
-	// $slideshow.on("swiperight", rewindSlide);
+	$slideshow.on("swipeleft", advanceSlide);
+	$slideshow.on("swiperight", rewindSlide);
 
 	UN-NOTE THIS LINE TOO */
 
