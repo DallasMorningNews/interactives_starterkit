@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 	// SLIDESHOWS: UNNOTE THE FOLLOWING TO USE SLIDESHOWS 
 
-	/* 
+	/* DELETE THIS ENTIRE LINE FOR SLIDESHOW USE
 
 	//setting up variables for the slideshow
 
@@ -121,7 +121,13 @@ $(document).ready(function() {
 	$slideshow.on("swipeleft", swipeAdvance);
 	$slideshow.on("swiperight", swipeRewind);
 
-	UN-NOTE THIS LINE TOO */
+	DELETE THIS ENTIRE LINE ALSO FOR SLIDESHOW USE */
+
+
+
+	/*
+	------------------------------------------------------------------------------------------
+	*/
 
 
 
