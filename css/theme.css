@@ -110,9 +110,10 @@ III. GLOBAL ARTICLE STYLES
 */
 
 * {
-  box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+
 }
 html {
   font-size: 10px;
@@ -615,11 +616,19 @@ XIV. SLIDESHOWS
   width: 100%;
 }
 
+.slideshow h5 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #797470;
+}
+
 .slide {
   float: left;
   left: 0;
   position: absolute;
   top: 0;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
   transition: all .3s ease-out;
   width: 100%;
 }
@@ -636,6 +645,9 @@ XIV. SLIDESHOWS
   opacity: .8;
   position: absolute;
   top: 50%;
+  -webkit-transition: opacity .3s ease-out;
+  -moz-transition: opacity .3s ease-out;
+  -o-transition: opacity .3s ease-out;
   transition: opacity .3s ease-out;
   width: 5rem;
 }
@@ -800,7 +812,7 @@ XVII. SOCIAL SHARING AND COMMENTS
     max-width: 46rem;
   }
   .gig-bar-container img {
-    width: 80px;
+    width: 65px;
   }
 }
 
