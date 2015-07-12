@@ -613,16 +613,16 @@ XIV. SLIDESHOWS
 .slideshow {
   margin: 4.8rem auto;
   max-width: 1400px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
 }
-
 .slideshow h5 {
   font-family: 'Open Sans', Arial, sans-serif;
   color: #797470;
 }
-
+.slideContainer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
 .slide {
   float: left;
   left: 0;
@@ -634,11 +634,9 @@ XIV. SLIDESHOWS
   transition: all .3s ease-out;
   width: 100%;
 }
-
 .slide .cutline {
   max-width: none;
 }
-
 .slideButton {
   background-color: white;
   cursor: pointer;
@@ -653,30 +651,24 @@ XIV. SLIDESHOWS
   transition: opacity .3s ease-out;
   width: 5rem;
 }
-
 .slideButton:hover {
   opacity: 1;
 }
-
 .nextButton {
   right: 0;
 }
-
 .slide img {
   width: 100%;
 }
-
 .current {
   margin-left: 0;
   opacity: 1;
   position: relative;
 }
-
 .preSlide {
   margin-left: 100%;
   opacity: 1;
 }
-
 .postSlide {
   margin-left: -100%;
   opacity: 0;
@@ -688,7 +680,6 @@ XIV. SLIDESHOWS
     height: 3rem;
   }
 }
-
 
 
 /*
