@@ -786,12 +786,9 @@ XVII. DROP DOWN LIST
   font-weight: bold;
 }
 .dropList .fa-twitter{
-  color: #A8A8A8;
+  color: #5CA3E6;
   cursor: pointer;
   transition: color .25s ease-out;
-}
-.dropList .fa-twitter:hover{
-  color:#5CA3E6;
 }
 .dropList .dropHed {
   cursor: pointer;
