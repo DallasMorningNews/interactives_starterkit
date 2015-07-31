@@ -3,22 +3,13 @@ $(document).ready(function() {
 	//custom scripting goes here
 
 
+	/*
+	------------------------------------------------------------------------------------------
+	CODE FOR SLIDESHOWS, UN-COMMENT THE TWO LINES ABOVE AND BELOW THE CODE AS INSTRUCTED TO USE
+	------------------------------------------------------------------------------------------
+	*/
 
-
-
-
-
-
-
-
-
-
-	// IF YOU'RE NOT USING SLIDESHOWS OR NDN VIDEOS IN YOUR PROJECT, DELETE THE NOTED CODE BELOW
-
-
-	// SLIDESHOWS: UNNOTE THE FOLLOWING TO USE SLIDESHOWS 
-
-	/* DELETE THIS ENTIRE LINE FOR SLIDESHOW USE
+	/* DELETE THIS ENTIRE LINE
 
 	//setting up variables for the slideshow
 
@@ -121,19 +112,52 @@ $(document).ready(function() {
 	$slideshow.on("swipeleft", swipeAdvance);
 	$slideshow.on("swiperight", swipeRewind);
 
-	DELETE THIS ENTIRE LINE ALSO FOR SLIDESHOW USE */
+	DELETE THIS ENTIRE LINE */
+
+
+
 
 
 
 	/*
 	------------------------------------------------------------------------------------------
+	CODE FOR DROP BULLETS, UN-COMMENT THE TWO LINES ABOVE AND BELOW THE CODE AS INSTRUCTED TO USE
+	------------------------------------------------------------------------------------------
 	*/
 
+	/* DELETE THIS ENTIRE LINE	
+
+	var $dropHead = $('.dropList .dropHed'),
+		$dropTweet = $('.dropList .fa-twitter');
+
+	$dropHead.on('click', function(){
+		$(this).next(".dropText").slideToggle(200); 
+		$(this).find(".fa").toggleClass('fa-plus').toggleClass('fa-minus');
+	});
+
+	$dropTweet.on("click", function(){
+		var shareID = $(this).closest(".dropList").attr("id"),
+			shareURL = "&url="+encodeURIComponent(window.location.href + "#" + shareID),
+			shareText = encodeURIComponent($(this).closest(".dropList").find("h4").text()),
+			shareLink = "https://twitter.com/intent/tweet?text="+ shareText + shareURL + "&via=dallasnews";
+		window.open(shareLink, '_blank');
+	});
+
+	DELETE THIS ENTIRE LINE */
 
 
-	// NDN VIDEO ASPECT RESIZER
 
-	/* UN-NOTE THIS BLOCK TO USE NDN VIDEO  
+
+
+
+
+	/*
+	------------------------------------------------------------------------------------------
+	NDN VIDEO ASPECT RESIZER, UN-COMMENT THE TWO LINES ABOVE AND BELOW THE CODE AS INSTRUCTED TO USE
+	------------------------------------------------------------------------------------------
+	*/
+
+	/* DELETE THIS ENTIRE LINE	  
 
 	//caching a pointer to the jquery element
 
@@ -157,7 +181,7 @@ $(document).ready(function() {
 		scaleVideo(); //runs the video aspect resizer when the width of the browser is changed
 	})
 
-	UN-NOTE THIS LINE TOO */
+	DELETE THIS ENTIRE LINE */
 
 
 });
