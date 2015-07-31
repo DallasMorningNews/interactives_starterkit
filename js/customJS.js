@@ -148,6 +148,37 @@ $(document).ready(function() {
 
 
 
+	/*
+	------------------------------------------------------------------------------------------
+	CODE FOR SYNOPSIS BLOCK, UN-COMMENT THE TWO LINES ABOVE AND BELOW THE CODE AS INSTRUCTED TO USE
+	------------------------------------------------------------------------------------------
+	*/
+
+	/* DELETE THIS ENTIRE LINE	
+
+	$(".synopsis p").on("click", function() {
+		var shareURL = "&url=" + encodeURIComponent(window.location.href),
+			shareText = $(this).text(),
+			twitterTag = "dallasnews";
+			
+		var maxLength = 97 // maximum number of characters to extract
+
+		var trimmedText = shareText.substr(0, maxLength);
+
+		trimmedText = trimmedText.substr(0, Math.min(trimmedText.length, trimmedText.lastIndexOf(" ")))
+
+		trimmedText = trimmedText.slice(1);
+
+		trimmedText += " ... "
+
+		trimmedText = encodeURIComponent(trimmedText); 
+		
+		var shareLink = "http://twitter.com/intent/tweet?text=" + trimmedText + shareURL + "&via=" + twitterTag;
+		window.open(shareLink, "_blank");
+	})
+
+	DELETE THIS ENTIRE LINE */
+
 
 
 

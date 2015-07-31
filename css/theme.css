@@ -8,7 +8,7 @@ III   GLOBAL ARTICLE STYLES
 IV    CONTENT HEADER
 V     CONTENT WELL
 VI    STORY HEAD, BYLINES AND INTRO
-VII   SIDE BLOCKS
+VII   SIDE BLOCKS AND INLINE BLOCKS
 VIII  IMAGE, WIDE, FULL AND INLINE BLOCKS
 IX    PULLQUOTES
 X     NDN EMBEDS
@@ -335,7 +335,7 @@ VI. STORY HEAD, BYLINES AND INTRO
 
 /*
 -------------------------------------------
-VII. SIDE BLOCKS
+VII. SIDE BLOCKS & INLINE BLOCKS
 -------------------------------------------
 */
 
@@ -344,17 +344,22 @@ VII. SIDE BLOCKS
   width: 100%;
   font-family: 'Open Sans', Arial, sans-serif;
 }
-.sideBlock p {
+.inlineBlock {
+  max-width: 650px;
+  width: 100%;
+  margin: 4.8rem auto;
   font-family: 'Open Sans', Arial, sans-serif;
 }
-.sideBlock p {
+.sideBlock p, .inlineBlock p {
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 1.8rem;
 }
-.sideBlock h4, .sideBlock h5, .sideBlock h6 {
+.sideBlock h4, .sideBlock h5, .sideBlock h6, .inlineBlock h4 {
   font-weight: bold;
+  color: #CECDC6;
 }
-.sideBlock img {
+.sideBlock img, .inlineBlock img {
   margin: 0 0 .3rem 0;
   width: 100%;
 }
@@ -404,7 +409,7 @@ VIII. IMAGE, WIDE, FULL AND INLINE BLOCKS
   margin-bottom: .3rem;
   width: 100%;
 }
-.wideBlock, .fullBlock, .inlineBlock {
+.wideBlock, .fullBlock {
   margin: 4.8rem auto;
 }
 .wideBlock p.cutline {
@@ -413,9 +418,7 @@ VIII. IMAGE, WIDE, FULL AND INLINE BLOCKS
 .fullBlock p.cutline {
   padding: 0 2rem;
 }
-.inlineBlock {
-  max-width: 650px;
-}
+
 
 .doubleBlock img {
   float: left;
@@ -776,16 +779,7 @@ XVII. DROP DOWN LIST
 -------------------------------------------
 */
 
-.dropList{
-  font-family: 'Open Sans', arial, sans-serif;
-  margin: 2.4rem auto;
-  max-width: 650px;
-  width: 100%;
-}
-.dropList h4{
-  font-weight: bold;
-}
-.dropList .fa-twitter{
+.fa-twitter{
   color: #5CA3E6;
   cursor: pointer;
   transition: color .25s ease-out;
@@ -840,7 +834,34 @@ XVII. DROP DOWN LIST
 
 /*
 -------------------------------------------
-XVIII. SOCIAL SHARING AND COMMENTS
+XVIII. SYNOPSIS BOXES
+-------------------------------------------
+*/
+
+.synopsis {
+  border-bottom: 1px solid #CECDC6;
+  padding-bottom: 2.4rem;
+}
+
+.synopsis h6 {
+  margin-bottom: .9rem;
+  font-weight: bold;
+  color: #3d3d3d;
+  text-transform: uppercase;
+}
+.synopsis p {
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-bottom: .9rem;
+  color: #797470;
+  cursor: pointer;
+}
+
+
+/*
+-------------------------------------------
+XIX. SOCIAL SHARING AND COMMENTS
 -------------------------------------------
 */
 
@@ -882,7 +903,7 @@ XVIII. SOCIAL SHARING AND COMMENTS
 
 /*
 -------------------------------------------
-XIX. ADS
+XX. ADS
 -------------------------------------------
 */
 
