@@ -357,7 +357,7 @@ VII. SIDE BLOCKS & INLINE BLOCKS
 }
 .sideBlock h4, .sideBlock h5, .sideBlock h6, .inlineBlock h4 {
   font-weight: bold;
-  color: #CECDC6;
+  color: #3d3d3d;
 }
 .sideBlock img, .inlineBlock img {
   margin: 0 0 .3rem 0;
