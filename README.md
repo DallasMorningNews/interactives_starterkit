@@ -12,3 +12,7 @@ Ad blocks have their own html code in the code blocks folders. ad-blockTop is th
 [HTML TextFixer](http://www.textfixer.com/html/convert-text-html.php)
 
 [TheShrinkRay](http://theshrinkray.herokuapp.com/)
+
+#### templates
+
+The `templates` directory contains Nunjucks templates for use with the [interactives app](https://github.com/DallasMorningNews/generator-dmninteractives).
