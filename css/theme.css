@@ -124,9 +124,6 @@ article {
   font-family: 'Open Sans', Arial, sans-serif;
   width: 100%;
 }
-footer p {
-  max-width: none;
-}
 a {
   color: #5CA3E6;
   font-weight: bold;
@@ -172,12 +169,7 @@ h6 {
   font-size: 1.6rem;
   line-height: 1.8rem;
 }
-p {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  font-family: Merriweather, Georgia, Times, serif;
-  margin: 0 auto 1.6rem auto;
-}
+
 
 
 /*
@@ -212,10 +204,14 @@ V. CONTENT WELL
   position: relative;
   width: 90%;
 }
-.contentWell p {
+.contentWell > p {
   max-width: 650px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: Merriweather, Georgia, Times, serif;
+  margin: 0 auto 1.6rem auto;
 }
-.contentWell p:last-of-type {
+.contentWell > p:last-of-type {
   margin-bottom: 0;
 }
 
@@ -250,7 +246,7 @@ VI. STORY HEAD, BYLINES AND INTRO
 .bylineBlock {
   text-align: center;
   max-width: 650px;
-  margin: 0 auto 3.6rem;
+  margin: 0 auto;
 }
 .bylineBlock p {
   color: #3d3d3d;
@@ -264,7 +260,7 @@ VI. STORY HEAD, BYLINES AND INTRO
 .bylineBlock p:last-of-type {
   margin-right: 0;
 }
-.intro {
+p.intro {
   font-size: 2.4rem;
   line-height: 4rem;
 }
@@ -276,12 +272,11 @@ VI. STORY HEAD, BYLINES AND INTRO
   margin: 0rem .5rem 0rem 0;
   padding-top: 0rem;
 }
-.subhead {
+p.subhead {
   color: #3d3d3d;
   font-size: 2.4rem; 
   line-height: 3.2rem;
   margin: 4.8rem auto 2.4rem auto;
-  max-width: 65rem;
 }
 
 @media (max-width: 860px) {
@@ -299,7 +294,7 @@ VI. STORY HEAD, BYLINES AND INTRO
     font-size: 1.4rem;
     line-height: 1.8rem;
   }
-  .intro {
+  p.intro {
     font-size: 2.2rem;
     line-height: 3.6rem;
   }
@@ -310,20 +305,13 @@ VI. STORY HEAD, BYLINES AND INTRO
   }
 }
 
-@media (max-width: 600px) {
-  .bylineBlock p {
-    display: block;
-    margin: 0 0 .3rem 0;
-  }
-}
-
 @media (max-width: 500px) {
   #storyHead h1 {
     font-size: 4.2rem;
     line-height: 4.8rem;
     letter-spacing: 0;
   }
-  .intro {
+  p.intro {
     font-size: 1.6rem;
     line-height: 2.4rem;
   }
@@ -383,10 +371,10 @@ p.source {
     float: none;
     margin: 4.8rem auto 4.8rem;
     width: 100%;
-    max-width: 65rem;
+    max-width: 650px;
   }
   .graphicBlock {
-    max-width: 40rem;
+    max-width: 400px;
   }
 }
 
@@ -412,9 +400,7 @@ VIII. IMAGE, WIDE, FULL AND INLINE BLOCKS
 .wideBlock, .fullBlock {
   margin: 4.8rem auto;
 }
-.wideBlock p.cutline {
-  max-width: none;
-}
+
 .fullBlock p.cutline {
   padding: 0 2rem;
 }
@@ -461,7 +447,6 @@ IX. PULLQUOTES
 .pullquote p.attribution {
   font-family: 'Open Sans', Arial, sans-serif;
   color: #797470;
-  max-width: none;
   text-align: right;
 }
 .pullquote p.attribution:before {
@@ -554,7 +539,7 @@ XIII. BREAKOUT MODULES
 
 .breakoutModule {
   margin: 4.8rem auto;
-  width: 100%;
+  width: 95%;
 }
 .breakoutModule h5 {
   font-family: 'Open Sans', Arial, sans-serif;
@@ -638,9 +623,6 @@ XIV. SLIDESHOWS
   -o-transition: all .3s ease-out;
   transition: all .3s ease-out;
   width: 100%;
-}
-.slide .cutline {
-  max-width: none;
 }
 .slideButton {
   background-color: white;
