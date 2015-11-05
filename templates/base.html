@@ -4,27 +4,7 @@
 
 	<!-- Add Custom Meta Data -->
 	{%block custom_meta%}
-	<meta content="{{keywords|join(',')}}" name="keywords" />
 
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-	<meta content="{{description}}" name="description" />
-	<title>{{name}}</title>
-	<meta property="og:url" content="{{url}}" />
-	<meta property="og:title" content="{{name}}"/>
-	<meta property="og:description" content="{{description}}" name="description"/>
-	<meta property="og:image" content="{{imgURL}}"/>
-	<meta property="og:image:height" content="{{imgHeight}}"/>
-	<meta property="og:image:width" content="{{imgWidth}}"/>	
-	<meta name="twitter:card" content="summary_large_image">
-
-	<meta name='parsely-page' id='parsely-page' content='{"title": "{{name}}", "link": "{{url}}", "image_url": "{{imgURL}}", "type": "post", "post_id": "{{id}}", "pub_date": "{{publishDate}}", "section": "{{section}}", "author": ["{{authors}}"], tags": ["{{keywords|join('","')}}"]}'/>
-
-	<meta property="og:keywords" content="{{keywords|join(',')}}"/>
-
-	<meta name='news_keywords' content="{{keywords|join(',')}}"/>
 	{%endblock%}
 	<!-- End Custom Meta Data -->
 	
@@ -40,14 +20,16 @@
 	
 	<script type="text/javascript" src="http://res.dallasnews.com/interactives/template/common/js/responsive-styles.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
-	  <script type="text/javascript">
-	    WebFont.load({
-	      google: { //change custom to google: if using google cdn font
-	        families: ['Open+Sans', 'Merriweather'],
-	      }
-	    });
 
+
+	<script type="text/javascript">
+		WebFont.load({
+		  google: { //change custom to google: if using google cdn font
+		    families: ['Open+Sans', 'Merriweather'],
+		  }
+		});
 	</script> 
+
 	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
 
@@ -63,58 +45,9 @@
 	START AD CODE
 	================================
 	-->
+	{%block ad%}
 
-	<script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
-	<script type="text/javascript">
-	DFP_networkId = "11222444";
-	var DFPSlotSizes = [];
-	if (jQuery(window).width() < 768)
-	{
-	var DFP_sitepage = "m.DMN/interactives";
-	DFPSlotSizes = [320,50]
-	var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
-	adSlot0.setTargeting("position", "x01");
-	adSlot0.addService(googletag.pubads());
-	
-	/*
-	var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
-	adSlot1.setTargeting("position", "x02");
-	adSlot1.addService(googletag.pubads());
-	*/
-	
-	/*
-	var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
-	adSlot2.setTargeting("position", "x03");
-	adSlot2.addService(googletag.pubads()); 
-	*/
-	}
-	else
-	{
-	var DFP_sitepage = "DMN/interactives";
-	 DFPSlotSizes = [728,90]
-	var adSlot0 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionTop");
-	adSlot0.setTargeting("position", "Top");
-	adSlot0.addService(googletag.pubads());
-	
-	/*
-	var adSlot1 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionMiddle");
-	adSlot1.setTargeting("position", "Top");
-	adSlot1.addService(googletag.pubads());
-	*/
-	
-	/*
-	var adSlot2 = googletag.defineSlot('/' + DFP_networkId + '/' + DFP_sitepage, DFPSlotSizes, "dfpAdPositionBottom");
-	adSlot2.setTargeting("position", "Top");
-	adSlot2.addService(googletag.pubads());
-	*/
-	 }
-	</script>
-	<script type="text/javascript">
-	googletag.pubads().enableSingleRequest();
-	googletag.pubads().enableSyncRendering();
-	googletag.enableServices();
-	</script>
-
+	{%endblock%}
 	<!--
 	================================
 	END AD CODE
@@ -131,76 +64,6 @@
 
 	{%block content%}
 
-		<section id="contentHeader">
-			<img src="images/defaultImage.jpg" alt="FILL THIS IN">
-			<p class="cutline">Cutline goes here. You can remove this tag if you don't feel the lead image needs a cutline</p>
-		</section>
-		<!-- end contentHeader -->
-
-		<section class="contentWell clearFix">
-
-			<header id="storyHead">
-				<h3>Label, if needed</h3>
-				<h1>Main Headline</h1>
-				<h2>Deck head goes in this spot here</h2>
-			</header>
-				<!-- end storyHead -->
-
-			<div class="bylineBlock">
-	    		<p>By <a target="blank" href="mailto:emailaddresshere">Writer Name</a> | Staff Writer</p>
-	    		<p>Published Month Date, Year</p>
-   			</div>
-    		<!-- end bylineBlock -->
-
-      		<div class="shareComments shareCommentsTop">	
-				<ul id="share-bar1" class="width-auto-hack"></ul>
-			</div>        		
-			<!-- end shareComments -->
-
-
-
-			<p class="intro"><span class="dropcap">A</span>n opening paragraph goes here. orem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fermentum tortor a eleifend sagittis. Quisque laoreet elit vitae turpis aliquet tincidunt. Nulla molestie vitae purus eget dignissim. Quisque blandit nibh lorem, non mollis velit rutrum ac. Pellentesque pharetra mattis luctus.</p>
-
-
-
-			<section class="credits clearFix">
-				<p>Author: <a href="mailto:emailaddress">Name</a></p>
-				<p>Editor: <a href="mailto:emailaddress">Name</a></p>
-				<p>Copy Editor: <a href="mailto:emailaddress">Name</a></p>
-				<p>Photos: <a href="mailto:emailaddress">Name</a></p>
-				<p>Graphics: <a href="mailto:emailaddress">Name</a></p>
-				<p>Designer: <a href="mailto:emailaddress">Name</a></p>
-			</section>
-			<!-- end credits -->
-
-			<section class="more clearFix">
-				<h5>More from The Dallas Morning News</h5>
-				<a class="clearFix" href="#">
-					<img src="images/defaultImage.jpg" alt="Fill this in">
-					<h6>Story title goes here</h6>
-					<p>Description of the story goes in this spot here</p>
-				</a>
-				<a class="clearFix" href="#">
-					<img src="images/defaultImage.jpg" alt="Fill this in">
-					<h6>Story title goes here</h6>
-					<p>Description of the story goes in this spot here</p>
-				</a>
-				<a class="clearFix" href="#">
-					<img src="images/defaultImage.jpg" alt="Fill this in">
-					<h6>Story title goes here</h6>
-					<p>Description of the story goes in this spot here</p>
-				</a>
-			</section>
-			<!-- end more -->
-
-      		<div class="shareComments">   		
-				<ul id="share-bar2" class="width-auto-hack"></ul>
-                <div id="comments"></div>
-			</div>
-			<!-- end shareComments -->
-
-		</section>
-		<!-- end contentWell -->
 
 	{%endblock%}
 
@@ -209,6 +72,7 @@
 	<script type="text/javascript" src="http://res.dallasnews.com/interactives/template/common/js/responsive-footer.js"></script>
   	<script src="static/js/dependency-bundle.js"></script>
 	<script type="text/javascript" src="static/js/scripts-bundle.js"></script>
+	
 	{%block custom_foot%}
 	{%endblock%}
 
@@ -310,8 +174,6 @@
 		})("script", "parsely", document);
 	</script>
 	<!-- END Parse.ly Include: Standard -->
-
-
 
 
 </body>
