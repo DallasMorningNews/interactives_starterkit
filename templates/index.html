@@ -29,7 +29,7 @@
 
 {%block custom_head%}
 	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="static/css/custom.scss.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.scss.css">
 {%endblock%}
 
 
@@ -91,7 +91,7 @@ googletag.enableServices();
 
 {%block content%}
 <section id="contentHeader">
-	<img src="images/defaultImage.jpg" alt="FILL THIS IN">
+	{{ img.jpg('defaultImage','FILL THIS IN') }}
 	<p class="cutline">Cutline goes here. You can remove this tag if you don't feel the lead image needs a cutline</p>
 </section>
 <!-- end contentHeader -->
@@ -135,17 +135,17 @@ googletag.enableServices();
 	<section class="more clearFix">
 		<h5>More from The Dallas Morning News</h5>
 		<a class="clearFix" href="#">
-			<img src="images/defaultImage.jpg" alt="Fill this in">
+			{{ img.jpg('defaultImage','FILL THIS IN') }}
 			<h6>Story title goes here</h6>
 			<p>Description of the story goes in this spot here</p>
 		</a>
 		<a class="clearFix" href="#">
-			<img src="images/defaultImage.jpg" alt="Fill this in">
+			{{ img.jpg('defaultImage','FILL THIS IN') }}
 			<h6>Story title goes here</h6>
 			<p>Description of the story goes in this spot here</p>
 		</a>
 		<a class="clearFix" href="#">
-			<img src="images/defaultImage.jpg" alt="Fill this in">
+			{{ img.jpg('defaultImage','FILL THIS IN') }}
 			<h6>Story title goes here</h6>
 			<p>Description of the story goes in this spot here</p>
 		</a>
