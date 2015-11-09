@@ -13,6 +13,22 @@ Ad blocks have their own html code in the code blocks folders. ad-blockTop is th
 
 [TheShrinkRay](http://theshrinkray.herokuapp.com/)
 
+## Interactives app
+
+The [interactives app](https://github.com/DallasMorningNews/generator-dmninteractives) pulls some files directly from this repo while scaffolding a project directory.
+
 #### templates
 
-The `templates` directory contains Nunjucks templates for use with the [interactives app](https://github.com/DallasMorningNews/generator-dmninteractives).
+The `templates` directory contains Nunjucks templates:
+- index.html
+- base.html
+
+**Important:** Any changes to the template need to be duplicated across these template files and the `index.html` in this repo's outer directory.
+
+#### statics
+
+The app also pulls in static assets: 
+- theme.css
+- mixins.scss
+- variables.scss
+- customJS.js
