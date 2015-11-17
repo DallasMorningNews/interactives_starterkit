@@ -3,6 +3,7 @@ $(document).ready(function() {
 	//custom scripting goes here
 
 	// injecting current year into footer
+	// DO NOT DELETE
 	
 	var d = new Date();
 	var year = d.getFullYear();
