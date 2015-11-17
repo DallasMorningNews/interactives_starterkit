@@ -2,6 +2,12 @@ $(document).ready(function() {
 	
 	//custom scripting goes here
 
+	// injecting current year into footer
+	
+	var d = new Date();
+	var year = d.getFullYear();
+
+	$('.copyright').text(year);
 
 	/*
 	------------------------------------------------------------------------------------------

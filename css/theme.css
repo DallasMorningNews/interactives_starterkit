@@ -734,6 +734,7 @@ XVI. MORE LINKS
   font-size: 1.3rem;
   line-height: 1.8rem;
   font-weight: normal;
+  letter-spacing: -.2px;
 }
 
 @media (max-width: 600px) {
