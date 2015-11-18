@@ -28,7 +28,7 @@ The `templates` directory contains Nunjucks templates:
 #### statics
 
 The app also pulls in static assets: 
-- theme.css
-- mixins.scss
-- variables.scss
+- theme.scss
+- _mixins.scss
+- _variables.scss
 - customJS.js
