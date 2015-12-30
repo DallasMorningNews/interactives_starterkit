@@ -960,39 +960,45 @@ XIX. SOCIAL SHARING AND COMMENTS
 
 .shareComments {
   margin: 4.8rem auto;
-  max-width: 65rem;
-}
+  max-width: 700px;
+  padding: 0 50px; }
+
 .shareCommentsTop {
   max-width: none;
   width: auto;
-}
-.shareCommentsTop table {
-  margin: 0 auto;
-}
+  padding: 0 0; }
+
+.shareComments table {
+  margin: 0 auto; }
 
 .gig-counter {
-  margin-top: 6px !important;
-}
+  margin-top: 6px !important; }
+
+div.gig-button-container {
+  width: 50px;
+  padding: 0 0 0 0 !important; }
+
 .gig-bar-container img {
-  margin-right: .5rem;
-  width: 9rem;
-}
+  margin: 0 auto;
+  width: 40px;
+  height: 40px; }
+
 #comments {
-  margin-top: 4.8rem;
-}
+  margin-top: 4.8rem; }
+  #comments a {
+    border-bottom: none;
+    box-shadow: none;
+    font-weight: normal; }
 
 @media (max-width: 860px) {
   .shareComments {
-    margin: 2.4rem auto 4.8rem;
-  }
+    margin: 2.4rem auto 4.8rem; }
+
   .shareCommentsTop {
-    max-width: 46rem;
-  }
-  .gig-bar-container img {
-    width: 65px;
-    margin-right: 0;
-  }
-}
+    max-width: 460px; } }
+@media (max-width: 600px) {
+  .shareComments {
+    padding: 0 25px; } }
 
 /*
 -------------------------------------------
