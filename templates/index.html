@@ -10,9 +10,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 <meta content="{{description}}" name="description" />
-<title>{{name}}</title>
+<title>{{title}}</title>
 <meta property="og:url" content="{{url}}" />
-<meta property="og:title" content="{{name}}"/>
+<meta property="og:title" content="{{title}}"/>
 <meta property="og:description" content="{{description}}" name="description"/>
 <meta property="og:image" content="{{imgURL}}"/>
 <meta property="og:image:height" content="{{imgHeight}}"/>
@@ -23,7 +23,7 @@
 <meta name="twitter:creator" content="{{authorTwitter}}" />
 
 
-<meta name='parsely-page' id='parsely-page' content='{"title": "{{name}}", "link": "{{url}}", "image_url": "{{imgURL}}", "type": "post", "post_id": "{{id}}", "pub_date": "{{publishDate}}", "section": "{{section}}", "author": ["{{authors}}"], tags": ["{{keywords|join('","')}}"]}'/>
+<meta name='parsely-page' id='parsely-page' content='{"title": "{{title}}", "link": "{{url}}", "image_url": "{{imgURL}}", "type": "post", "post_id": "{{id}}", "pub_date": "{{publishDate}}", "section": "{{section}}", "author": ["{{authors}}"], tags": ["{{keywords|join('","')}}"]}'/>
 
 <meta property="og:keywords" content="{{keywords|join(',')}}"/>
 
@@ -177,7 +177,7 @@ googletag.enableServices();
 
 {%block custom_social_meta%}
 <script type="text/javascript">
-var storyTitle = "{{name}}",
+var storyTitle = "{{title}}",
 	storyURL = "{{url}}",
 	leadText = "{{description}}",
 	storyIMG = "{{imgURL}}",
