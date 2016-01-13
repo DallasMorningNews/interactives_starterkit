@@ -967,21 +967,6 @@ XIX. SOCIAL SHARING AND COMMENTS
   width: auto;
   padding: 0 0; }
 
-.shareComments table {
-  margin: 0 auto; }
-
-.gig-counter {
-  margin-top: 6px !important; }
-
-div.gig-button-container {
-  width: 50px;
-  padding: 0 0 0 0 !important; }
-
-.gig-bar-container img {
-  margin: 0 auto;
-  width: 40px;
-  height: 40px; }
-
 #comments {
   margin-top: 4.8rem; }
   #comments a {
@@ -998,6 +983,81 @@ div.gig-button-container {
 @media (max-width: 600px) {
   .shareComments {
     padding: 0 25px; } }
+
+
+.rrssb-buttons{
+  box-sizing:border-box;
+  font-family:"Proxima Nova",Helvetica,Arial,sans-serif;
+  font-size:1rem;
+  height:2.8rem;
+  text-align:center;
+  margin:0;
+  padding:0;
+  width:100%;
+}
+  .rrssb-buttons:after {
+    clear:both;
+  }
+  .rrssb-buttons:after, .rrssb-buttons:before {
+    content:' ';
+    display:table;
+  }
+  .rrssb-buttons li {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+    line-height: 2.3rem;
+    list-style:none;
+    margin:0 1rem 0 0;
+    padding:0;
+  }
+  .rrssb-buttons li a {
+    color: #fff !important;
+    width: 40px;
+    height: 40px;
+    background-size: 160px 80px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    display: block;
+  }
+  .rrssb-buttons li.rrssb-email a{
+    background-image:url('http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/socialSprites.svg');
+    background-position: -80px 0px;
+  }
+  .rrssb-buttons li.rrssb-email a:hover{
+    background-image:url('http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/socialSprites.svg');
+    background-position: -80px -40px;
+  }
+  .rrssb-buttons li.rrssb-facebook a{
+    background-image:url('http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/socialSprites.svg');
+    background-position: 0px 0px;
+  }
+  .rrssb-buttons li.rrssb-facebook a:hover{
+    background-image:url('http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/socialSprites.svg');
+    background-position: 0px -40px;
+  }
+  .rrssb-buttons li.rrssb-twitter a{
+    background-image:url('http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/socialSprites.svg');
+    background-position: -40px 0px;
+  }
+  .rrssb-buttons li.rrssb-twitter a:hover{
+    background-image:url('http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/socialSprites.svg');
+    background-position: -40px -40px;
+  }
+  .rrssb-buttons li.rrssb-print a{
+    background-image:url('http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/socialSprites.svg');
+    background-position: -120px 0px;
+  }
+  .rrssb-buttons li.rrssb-print a:hover{
+    background-image:url('http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/socialSprites.svg');
+    background-position: -120px -40px;
+  }
+  .rrssb-buttons li a .rrssb-text{
+    display:none;
+    padding:0;
+    margin:0;
+    height:0;
+  }
 
 /*
 -------------------------------------------
