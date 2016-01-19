@@ -24,7 +24,7 @@
 
 <meta name="liveFyreID" content="{{id}}" />
 
-<meta name='parsely-page' id='parsely-page' content='{"title": "{{title}}", "link": "{{url}}", "image_url": "{{imgURL}}", "type": "post", "post_id": "{{id}}", "pub_date": "{{publishDate}}", "section": "{{section}}", "author": ["{{authors}}"], "tags": ["{{keywords|join('","')}}"]}'/>
+<meta name='parsely-page' id='parsely-page' content='{"title": "{{title}}", "link": "{{url}}", "image_url": "{{imgURL}}", "type": "post", "post_id": "{{id}}", "pub_date": "{{publishDate}}", "section": "{{section}}", "author": ["{{authors}}"], "tags": ["{{keywords|join('","')|safe}}"]}'/>
 
 <meta property="og:keywords" content="{{keywords|join(',')}}"/>
 
