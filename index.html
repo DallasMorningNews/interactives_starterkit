@@ -227,66 +227,7 @@
 	</footer>
 
 	<script type="text/javascript" src="js/customJS.js"></script>
-	<!-- Gigya -->
-	<!-- Can this be included when initialized? -->
-	<script type="text/javascript" src="http://cdn.gigya.com/js/socialize.js?apiKey=3_9lzrxJh-GQofXtoOq-ADFDpwOla0DXKJOvVl_KnlZPjeuRyBKYHjyaA2UYgGvXGv&amp;ver=3.0.4">
-		{
-			lang : 'en',
-			enabledProviders: 'facebook,twitter,google,linkedin,yahoo,messenger',
-			connectWithoutLoginBehavior: 'alwaysLogin'
-		}			
-	</script>
-	<!-- Gigya Templates -->
-	<script id="gigya-new-user-tmpl" type="text/x-jquery-tmpl">
-		<div id='gigya-new-user-wrap' class='float-left'>
-			<h3 class='label'>Please provide your email address to join</h3>
-			<p>
-				<label>Email<br>
-					<input type='text' name='email' size='20' value='' class='input'>
-				</label>
-			</p>
-			<div class='button-wrap'>
-				<input id='gigya-new-user-button' style='width:auto;' type='button' value='Register' class='button-primary'>
-			</div>
-		</div>
-	</script>	
-	<script id="gigya-account-linking-tmpl" type="text/x-jquery-tmpl">
-		<div id='gigya-sep-wrap'>
-			<div class="sep-line"></div>
-			<h3>OR</h3>
-			<div class="sep-line"></div>
-		</div>
-		<div id='gigya-account-linking-wrap'>
-			<h3 class='label'>Yes, Please link my existing account with ${user.loginProvider} for quick and secure access</h3>
-			<p>
-				<label>Email<br>
-					<input type='text' size='20' value='' class='input' name='email'>
-				</label>
-			</p>
-			<p>
-				<label>Password<br>
-					<input type='password' size='20' value='' class='input' name='password'>
-				</label>
-			</p>
-			<div class='button-wrap'>
-				<input id='gigya-new-account-button' style='width:auto;' type='button' value='Link Accounts' class='button-primary'>
-			</div>
-		</div>
-	</script>	
-	<script id="gigya-header-tmpl" type="text/x-jquery-tmpl">
-		<div id='dialog-header'>
-			<div class="ui-helper-clearfix">
-			<img class='thumbnail' src='${user.thumbnailURL}'/>
-			<p class='text'>
-				<b>Hi ${user.firstName}</b>
-				{{if isEmailExist}}, The email is already used, please provide a new email or link to an existing account.{{/if}}
-				{{if isNewUser}}{{/if}}
-			</p>
-			</div>	
-		</div>
-	</script>
-	<!-- End Gigya Templates -->
-	<!-- End Gigya -->
+
 
 	<script type="text/javascript">
 	var storyTitle = "TITLE HERE",
