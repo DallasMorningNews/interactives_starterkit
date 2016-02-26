@@ -334,6 +334,7 @@ VI. STORY HEAD, BYLINES AND INTRO
   margin: 4.8rem auto 2.4rem auto;
   text-align: center;
   color: #212121;
+  max-width: 1000px;
 }
 #storyHead h1 {
   font-size: 6.4rem;
@@ -359,12 +360,22 @@ VI. STORY HEAD, BYLINES AND INTRO
 }
 .bylineBlock p {
   color: #212121;
-  display: inline-block;
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 1.4rem;
   font-style: italic;
-  margin: 0 2.4rem .6rem 0;
+  margin: 0 0 .9rem 0;
   text-align: center;
+  a {
+    display: inline-block;
+  }
+}
+.authorTwitter {
+  text-indent: -99999px;
+  width: 16px;
+  height: 16px;
+  background-image: url('http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/socialSprites.svg');
+  background-repeat: no-repeat;
+  background-size: 72px 32px;
 }
 .bylineBlock p:last-of-type {
   margin-right: 0;
@@ -711,7 +722,7 @@ XIV. SLIDESHOWS
 
 .slideshow {
   margin: 4.8rem auto;
-  max-width: 1400px;
+  max-width: 1000px;
 }
 .slideshow h5 {
   font-family: 'Open Sans', Arial, sans-serif;
