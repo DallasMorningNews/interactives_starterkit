@@ -369,14 +369,14 @@ VI. STORY HEAD, BYLINES AND INTRO
     display: inline-block;
   }
 }
-.authorTwitter {
-  text-indent: -99999px;
-  width: 16px;
-  height: 16px;
-  background-image: url('http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/socialSprites.svg');
-  background-repeat: no-repeat;
-  background-size: 72px 32px;
-}
+// .authorTwitter {
+//   text-indent: -99999px;
+//   width: 16px;
+//   height: 16px;
+//   background-image: url('http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/twitterblue.svg');
+//   background-repeat: no-repeat;
+//   background-size: 72px 32px;
+// }
 .bylineBlock p:last-of-type {
   margin-right: 0;
 }

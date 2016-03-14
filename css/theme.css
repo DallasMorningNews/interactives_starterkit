@@ -326,13 +326,15 @@ VI. STORY HEAD, BYLINES AND INTRO
   .bylineBlock p a {
     display: inline-block; }
 
-.authorTwitter {
+/* .authorTwitter {
   text-indent: -99999px;
   width: 16px;
   height: 16px;
   background-image: url("http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/socialSprites.svg");
   background-repeat: no-repeat;
-  background-size: 72px 32px; }
+  background-size: 72px 32px; 
+  background-position: -20px -16px;
+} */
 
 .bylineBlock p:last-of-type {
   margin-right: 0; }
