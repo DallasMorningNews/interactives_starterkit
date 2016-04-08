@@ -7,7 +7,7 @@
 
 	{%endblock%}
 	<!-- End Custom Meta Data -->
-	
+
 	<meta property="fb:app_id" content="258290334265148"/>
 	<meta property="fb:page_id" content="20946638799"/>
 	<meta property="fb:admins" content="1043783589"/>
@@ -15,8 +15,8 @@
 	<link rel="shortcut icon" type="image/x-icon" href="http://www.dallasnews.com/favicon-premium.ico"/>
 	<link rel="stylesheet" type="text/css" href="http://interactives.templates.statics.s3.amazonaws.com/v1.0/css/share.css"/>
 	<link rel="stylesheet" type="text/css" href="http://interactives.templates.statics.s3.amazonaws.com/v1.0/css/print.css" media="print"/>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,700italic%7CMerriweather:400,400italic' rel='stylesheet' type='text/css'>
-	
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,700italic%7CMerriweather:400,400italic" rel="stylesheet" type="text/css">
+
 	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
 
 
@@ -26,17 +26,16 @@
 		    families: ['Open+Sans', 'Merriweather'],
 		  }
 		});
-	</script> 
+	</script>
 
-	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/dependency-bundle.css" />
 	<link rel="stylesheet" type="text/css" href="css/styles-bundle.css" />
 	{%block custom_head%}
 	{%endblock%}
 
-	
+
 
 	<!--
 	================================
@@ -60,7 +59,7 @@
 	<header class="bg-black">
 		<a class="logo" href="http://www.dallasnews.com" id="top"><span class="sr-only">The Dallas Morning News</span></a>
 	</header>
-    
+
 	<article id="content">
 
 	{%block content%}
@@ -86,9 +85,9 @@
    			</div>
     		<!-- end bylineBlock -->
 
-      		<div class="shareComments shareCommentsTop">	
+      		<div class="shareComments shareCommentsTop">
 				<ul id="share-bar1" class="width-auto-hack"></ul>
-			</div>        		
+			</div>
 			<!-- end shareComments -->
 
 			<p class="intro"><span class="dropcap">A</span>n opening paragraph goes here. orem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fermentum tortor a eleifend sagittis. Quisque laoreet elit vitae turpis aliquet tincidunt. Nulla molestie vitae purus eget dignissim. Quisque blandit nibh lorem, non mollis velit rutrum ac. Pellentesque pharetra mattis luctus.</p>
@@ -124,7 +123,7 @@
 			</section>
 			<!-- end more -->
 
-      		<div class="shareComments">   		
+      		<div class="shareComments">
 				<ul id="share-bar2" class="width-auto-hack"></ul>
                 <div id="comments"></div>
 			</div>
@@ -148,7 +147,7 @@
 
   	<script src="js/dependency-bundle.js"></script>
 	<script type="text/javascript" src="js/scripts-bundle.js"></script>
-	
+
 	{%block custom_foot%}
 	{%endblock%}
 
@@ -156,12 +155,12 @@
 
 	{%block custom_social_meta%}
 	<script type="text/javascript">
-	var storyTitle = "{{name}}",
+	var storyTitle = "{{shareTitle}}",
 		storyURL = "{{url}}",
-		leadText = "{{description}}",
+		leadText = "{{shareText}}",
 		storyIMG = "{{imgURL}}",
 		storyAuthor = "{{authors}}",
-		twitterTag = "{{twitter}}",
+		twitterTag = "{{sectionTwitter}}",
 		comments = true,
 		share = true;
 		OAS_sitepage = 'www.dallasnews.com/{{desk}}/{{section}}/';
