@@ -14,7 +14,7 @@ VIII  IMAGE, WIDE, FULL AND INLINE BLOCKS
 IX    PULLQUOTES
 X     NDN EMBEDS
 XI    YOUTUBE EMBEDS
-XII   RELATED LINKS AND FACT BOXES 
+XII   RELATED LINKS AND FACT BOXES
 XIII  BREAKOUT BOXES
 XIV   SLIDESHOWS
 XV    CREDIT LINKS
@@ -320,21 +320,12 @@ VI. STORY HEAD, BYLINES AND INTRO
   color: #212121;
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 1.4rem;
+  line-height: 1.8rem;
   font-style: italic;
   margin: 0 0 .9rem 0;
   text-align: center; }
   .bylineBlock p a {
     display: inline-block; }
-
-/* .authorTwitter {
-  text-indent: -99999px;
-  width: 16px;
-  height: 16px;
-  background-image: url("http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/socialSprites.svg");
-  background-repeat: no-repeat;
-  background-size: 72px 32px; 
-  background-position: -20px -16px;
-} */
 
 .bylineBlock p:last-of-type {
   margin-right: 0; }
