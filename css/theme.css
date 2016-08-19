@@ -20,7 +20,7 @@ XIV   SLIDESHOWS
 XV    CREDIT LINKS
 XVI   MORE LINKS
 XVII  DROP DOWN BULLETS
-XVIII SOCIAL SHARING AND COMMENTS
+XVIII SYNOPSIS BLOCKS
 XIX   ADS
 
 /*
@@ -111,9 +111,6 @@ II. KASON TEMPLATE STYLES, HEADER AND FOOTER
   .logo:hover {
     opacity: 1; }
 
-@media (max-width: 432px) {
-  .logo {
-    width: 198px; } }
 .sr-only {
   position: absolute;
   width: 1px;
@@ -282,7 +279,7 @@ V. CONTENT WELL
 
 .contentWell > p {
   max-width: 650px;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 2.4rem;
   font-family: "PT Serif", Georgia, Times, serif;
   margin: 0 auto 1.6rem auto; }
@@ -290,6 +287,9 @@ V. CONTENT WELL
 .contentWell > p:last-of-type {
   margin-bottom: 0; }
 
+@media (max-width: 500px) {
+  .contentWell > p {
+    font-size: 1.6rem; } }
 /*
 -------------------------------------------
 VI. STORY HEAD, BYLINES AND INTRO
@@ -330,8 +330,7 @@ VI. STORY HEAD, BYLINES AND INTRO
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 1.8rem;
-  font-style: italic;
-  margin: 0 0 .9rem 0;
+  margin: 0 0 .6rem 0;
   text-align: center; }
   .bylineBlock p a {
     display: inline-block; }
@@ -484,11 +483,23 @@ VIII. IMAGE, WIDE, FULL AND INLINE BLOCKS
 .doubleBlock img:last-of-type {
   margin-right: 0; }
 
+.mugBlock {
+  max-width: 150px;
+  margin-left: calc((100% - 650px) / 2);
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px; }
+
 @media (max-width: 740px) {
   .doubleBlock img {
     float: none;
     margin-right: 0;
-    width: 100%; } }
+    width: 100%; }
+
+  .mugBlock {
+    margin-left: 0;
+    max-width: 125px; } }
 /*
 -------------------------------------------
 IX. PULLQUOTES
@@ -537,7 +548,7 @@ X. NDN EMBEDS
 
 /*
 -------------------------------------------
-XI. YOUTUBE EMBEDS
+XI. VIDEO EMBEDS
 -------------------------------------------
 */
 .videoBlock {
@@ -866,7 +877,7 @@ XVIII. SYNOPSIS BOXES
 
 /*
 -------------------------------------------
-XX. ADS
+XIX. ADS
 -------------------------------------------
 */
 .ad {
