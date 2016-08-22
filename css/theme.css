@@ -95,7 +95,7 @@ II. KASON TEMPLATE STYLES, HEADER AND FOOTER
   -moz-box-sizing: border-box; }
 
 .logo {
-  background-image: url("../images/_dmn_logo.png");
+  background-image: url("http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/_dmn_logo.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: left center;

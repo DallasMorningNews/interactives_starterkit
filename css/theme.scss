@@ -104,7 +104,7 @@ II. KASON TEMPLATE STYLES, HEADER AND FOOTER
 }
 
 .logo {
-  background-image: url('../images/_dmn_logo.png');
+  background-image: url('http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/_dmn_logo.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: left center;
@@ -130,7 +130,6 @@ II. KASON TEMPLATE STYLES, HEADER AND FOOTER
   clip: rect(0,0,0,0);
   border: 0;
 }
-
 
 .interactiveFooter {
   background-color: #b0bcc4;
