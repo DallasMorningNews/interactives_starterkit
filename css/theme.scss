@@ -113,6 +113,7 @@ II. KASON TEMPLATE STYLES, HEADER AND FOOTER
   height: 40px;
   width: 154.4px;
   float: left;
+  cursor: pointer;
   @include transition(all, .25s, ease-out);
   &:hover {
       opacity: 1;
@@ -241,7 +242,8 @@ a:hover {
   text-decoration: underline;
 }
 a:visited {
-  color: #797979;
+  color: rgb(66,66,66);
+  font-weight: bold;
 }
 #content {
   padding: 0rem 0 5rem;
@@ -317,7 +319,11 @@ V. CONTENT WELL
   font-size: 1.7rem;
   line-height: 2.4rem;
   font-family: "PT Serif", Georgia, Times, serif;
-  margin: 0 auto 1.6rem auto;
+  margin: 0 auto 2.4rem auto;
+  &.twitterTag {
+      font-style: italic;
+      margin-top: 4.8rem;
+  }
 }
 .contentWell > p:last-of-type {
   margin-bottom: 0;
@@ -345,19 +351,19 @@ VI. STORY HEAD, BYLINES AND INTRO
     color: #323232;
   font-size: 6.4rem;
   letter-spacing: -.2rem;
-  line-height: 7.6rem;
-  margin-bottom: 1.8rem;
+  line-height: 7.2rem;
+  margin-bottom: 1.2rem;
 }
 #storyHead h2 {
     color: #323232;
   font-size: 3.2rem;
-  line-height: 4.2rem;
+  line-height: 3.6rem;
 }
 #storyHead h3 {
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
   font-size: 1.8rem;
-  line-height: 3rem;
-  margin-bottom: 1.8rem;
+  line-height: 2.4rem;
+  margin-bottom: 2.4rem;
   text-transform: uppercase;
 }
 .bylineBlock {
@@ -370,20 +376,17 @@ VI. STORY HEAD, BYLINES AND INTRO
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 1.8rem;
-  margin: 0 0 .6rem 0;
+  margin: 0 0 .3rem 0;
   text-align: center;
   a {
     display: inline-block;
+    color: rgb(66,66,66);
+    &:visited {
+        color: rgb(66,66,66);
+    }
   }
 }
-// .authorTwitter {
-//   text-indent: -99999px;
-//   width: 16px;
-//   height: 16px;
-//   background-image: url('http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/twitterblue.svg');
-//   background-repeat: no-repeat;
-//   background-size: 72px 32px;
-// }
+
 .bylineBlock p:last-of-type {
   margin-right: 0;
 }
@@ -405,20 +408,20 @@ p.intro {
 p.subhead {
   color: #323232;
   font-size: 2.4rem;
-  line-height: 3.2rem;
+  line-height: 3.6rem;
   margin: 4.8rem auto 2.4rem auto;
 }
 
 @media (max-width: 860px) {
   #storyHead h1 {
     font-size: 4.8rem;
-    line-height: 5.4rem;
-    margin-bottom: 1.8rem;
+    line-height: 6rem;
+    margin-bottom: 1.2rem;
   }
   #storyHead h2 {
     font-size: 2.4rem;
-    line-height: 3rem;
-    margin-bottom: 3rem;
+    line-height: 3.6rem;
+    margin-bottom: 1.2rem;
   }
   #storyHead h3 {
     font-size: 1.4rem;
@@ -579,8 +582,8 @@ IX. PULLQUOTES
 */
 
 .pullquote {
-  border-top: 1px solid #CECDC6;
-  border-bottom: 1px solid #CECDC6;
+  border-top: 1px solid #323232;
+  border-bottom: 1px solid #323232;
   font-size: 2.4rem;
   line-height: 4.8rem;
   padding: 2.4rem 0;
@@ -671,8 +674,8 @@ XII. RELATED LINKS AND FACT BOXES
 
 @media (max-width: 740px) {
   .relatedLinks, .factBox {
-    border-bottom: 1px solid #CECDC6;
-    border-top: 1px solid #CECDC6;
+    border-bottom: 1px solid #323232;
+    border-top: 1px solid #323232;
     padding: 2.4rem 0;
   }
 }
@@ -720,8 +723,8 @@ XIII. BREAKOUT MODULES
 
 @media (max-width: 740px) {
   .breakoutModule {
-    border-bottom: 1px solid #CECDC6;
-    border-top: 1px solid #CECDC6;
+    border-bottom: 1px solid #323232;
+    border-top: 1px solid #323232;
     margin: 4.8rem auto;
     padding: 2.4rem 0;
   }
@@ -823,7 +826,7 @@ XV. CREDIT LINKS
 */
 
 .credits {
-  border-bottom: 1px solid #797979;
+  border-bottom: 1px solid #323232;
   margin: 6rem auto 0;
   max-width: 650px;
   padding-bottom: 2.4rem;
@@ -838,7 +841,8 @@ XV. CREDIT LINKS
 }
 .credits a {
   color: #212121;
-  font-weight: bold;
+  font-weight: normal;
+  cursor: pointer;
 }
 
 /*
@@ -848,7 +852,7 @@ XVI. MORE LINKS
 */
 
 .more {
-  border-bottom: 1px solid #797979;
+  border-bottom: 1px solid #323232;
   margin: 4.8rem auto 6rem;
   max-width: 650px;
   padding-bottom: 2.4rem;
@@ -901,6 +905,23 @@ XVI. MORE LINKS
   .more a h6 {
     margin-top: -.3rem;
   }
+}
+
+@media (max-width: 400px) {
+
+    .more a {
+        margin-bottom: 3.6rem;
+    }
+    .more a img {
+        float: none;
+        width: 100%;
+        margin-bottom: .6rem;
+    }
+
+    .more a h6, .more a p {
+        width: 100%;
+        float: none;
+    }
 }
 
 /*
@@ -969,7 +990,7 @@ XVIII. SYNOPSIS BOXES
 */
 
 .synopsis {
-  border-bottom: 1px solid #CECDC6;
+  border-bottom: 1px solid #323232;
   padding-bottom: 2.4rem;
 }
 
@@ -995,10 +1016,10 @@ XIX. ADS
 */
 
 .ad {
-  border-bottom: 1px solid #797979;
-  border-top: 1px solid #797979;
+  border-bottom: 1px solid #323232;
+  border-top: 1px solid #323232;
   margin: 4.8rem 0;
-  padding: 4.8rem 0;
+  padding: 3.6rem 0;
   position: relative;
   text-align: center;
   z-index: 0; }

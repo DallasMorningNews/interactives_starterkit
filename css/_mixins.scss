@@ -43,23 +43,3 @@
 	-o-transition: $property $time $ease;
 	transition: $property $time $ease;
 }
-
-
-@mixin button($padding: 10px, $color: black, $background: white, $border-radius: 5px, $border: none) {
-    background-color: $background;
-    border: $border;
-    border-radius: $border-radius;
-    color: $color;
-    font-size: 1.4rem;
-    padding: $padding;
-    cursor: pointer;
-    font-weight: bold;
-    -webkit-transtion: all, .25s, ease-out;
-	-moz-transition: all, .25s, ease-out;
-	-o-transition: all, .25s, ease-out;
-	transition: all, .25s, ease-out;
-    &:hover {
-        $background: $color;
-        $color: $background;
-    }
-}
