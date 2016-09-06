@@ -59,7 +59,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.clearFix:after {
+.clearfix:after {
   content: "";
   display: table;
   clear: both; }
@@ -122,7 +122,7 @@ II. KASON TEMPLATE STYLES, HEADER AND FOOTER
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
-.interactiveFooter {
+.interactive-footer {
   background-color: #b0bcc4;
   min-height: 97px;
   padding: 20px 10px; }
@@ -133,10 +133,10 @@ II. KASON TEMPLATE STYLES, HEADER AND FOOTER
   margin-right: 6px;
   font-size: 14px; }
 
-.interactiveFooter a, .interactiveFooter p {
+.interactive-footer a, .interactive-footer p {
   color: white; }
 
-.interactiveFooter a {
+.interactive-footer a {
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -158,7 +158,7 @@ a.top {
   display: table;
   clear: both; }
 
-.interactiveFooter p {
+.interactive-footer p {
   clear: both;
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
   font-size: 14px;
@@ -255,14 +255,14 @@ h6 {
 IV. CONTENT HEADER
 -------------------------------------------
 */
-#contentHeader {
+#content-header {
   position: relative; }
 
-#contentHeader img {
+#content-header img {
   width: 100%;
   margin-bottom: .3rem; }
 
-#contentHeader .cutline {
+#content-header .cutline {
   padding: 0 2rem;
   margin: 0 0 .6rem 0; }
 
@@ -271,7 +271,7 @@ IV. CONTENT HEADER
 V. CONTENT WELL
 -------------------------------------------
 */
-.contentWell {
+.content-well {
   font-family: "PT Serif", Georgia, Times, serif;
   margin: 0 auto;
   max-width: 1400px;
@@ -279,71 +279,71 @@ V. CONTENT WELL
   position: relative;
   width: 90%; }
 
-.contentWell > p {
+.content-well > p {
   max-width: 650px;
   font-size: 1.7rem;
   line-height: 2.4rem;
   font-family: "PT Serif", Georgia, Times, serif;
   margin: 0 auto 2.4rem auto; }
-  .contentWell > p.twitterTag {
+  .content-well > p.twitterTag {
     font-style: italic;
     margin-top: 4.8rem; }
 
-.contentWell > p:last-of-type {
+.content-well > p:last-of-type {
   margin-bottom: 0; }
 
 @media (max-width: 500px) {
-  .contentWell > p {
+  .content-well > p {
     font-size: 1.6rem; } }
 /*
 -------------------------------------------
 VI. STORY HEAD, BYLINES AND INTRO
 -------------------------------------------
 */
-#storyHead {
+#story-head {
   margin: 4.8rem auto 2.4rem auto;
   text-align: center;
   color: #212121;
   max-width: 1000px; }
 
-#storyHead h1 {
+#story-head h1 {
   color: #323232;
   font-size: 6.4rem;
   letter-spacing: -.2rem;
   line-height: 7.2rem;
   margin-bottom: 1.2rem; }
 
-#storyHead h2 {
+#story-head h2 {
   color: #323232;
   font-size: 3.2rem;
   line-height: 3.6rem; }
 
-#storyHead h3 {
+#story-head h3 {
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
   font-size: 1.8rem;
   line-height: 2.4rem;
   margin-bottom: 2.4rem;
   text-transform: uppercase; }
 
-.bylineBlock {
+.byline-block {
   text-align: center;
   max-width: 650px;
   margin: 0 auto; }
 
-.bylineBlock p {
+.byline-block p {
   color: #212121;
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 1.8rem;
   margin: 0 0 .3rem 0;
   text-align: center; }
-  .bylineBlock p a {
+  .byline-block p a {
     display: inline-block;
     color: #424242; }
-    .bylineBlock p a:visited {
+    .byline-block p a:visited {
       color: #424242; }
 
-.bylineBlock p:last-of-type {
+.byline-block p:last-of-type {
   margin-right: 0; }
 
 p.intro {
@@ -368,17 +368,17 @@ p.subhead {
   margin: 4.8rem auto 2.4rem auto; }
 
 @media (max-width: 860px) {
-  #storyHead h1 {
+  #story-head h1 {
     font-size: 4.8rem;
     line-height: 6rem;
     margin-bottom: 1.2rem; }
 
-  #storyHead h2 {
+  #story-head h2 {
     font-size: 2.4rem;
     line-height: 3.6rem;
     margin-bottom: 1.2rem; }
 
-  #storyHead h3 {
+  #story-head h3 {
     font-size: 1.4rem;
     line-height: 1.8rem; }
 
@@ -393,7 +393,7 @@ p.subhead {
     top: 1px;
     margin: 2rem .5rem 0 0; } }
 @media (max-width: 500px) {
-  #storyHead h1 {
+  #story-head h1 {
     font-size: 4.2rem;
     line-height: 4.8rem;
     letter-spacing: 0; }
@@ -411,35 +411,35 @@ p.subhead {
 VII. SIDE BLOCKS & INLINE BLOCKS
 -------------------------------------------
 */
-.sideBlock {
+.side-block {
   max-width: 400px;
   width: 100%;
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif; }
 
-.inlineBlock {
+.inline-block {
   max-width: 650px;
   width: 100%;
   margin: 4.8rem auto;
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif; }
 
-.sideBlock p, .inlineBlock p {
+.side-block p, .inline-block p {
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 1.8rem; }
 
-.sideBlock h4, .sideBlock h5, .sideBlock h6, .inlineBlock h4 {
+.side-block h4, .side-block h5, .side-block h6, .inline-block h4 {
   font-weight: bold;
   color: #212121; }
 
-.sideBlock img, .inlineBlock img {
+.side-block img, .inline-block img {
   margin: 0 0 .3rem 0;
   width: 100%; }
 
-.rightBlock {
+.right-block {
   float: right;
   margin: 0 0 4.8rem 4.8rem; }
 
-.leftBlock {
+.left-block {
   float: left;
   margin: 0 4.8rem 4.8rem 0; }
 
@@ -450,13 +450,13 @@ p.source {
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif; }
 
 @media (max-width: 740px) {
-  .rightBlock, .leftBlock {
+  .right-block, .left-block {
     float: none;
     margin: 4.8rem auto 4.8rem;
     width: 100%;
     max-width: 650px; }
 
-  .graphicBlock {
+  .graphic-block {
     max-width: 400px; } }
 /*
 -------------------------------------------
@@ -470,28 +470,28 @@ VIII. IMAGE, WIDE, FULL AND INLINE BLOCKS
   color: #797470;
   font-weight: normal; }
 
-.imageBlock {
+.image-block {
   width: 100%; }
 
-.imageBlock img {
+.image-block img {
   margin-bottom: .3rem;
   width: 100%; }
 
-.wideBlock, .fullBlock {
+.wide-block, .full-block {
   margin: 4.8rem auto; }
 
-.fullBlock p.cutline {
+.full-block p.cutline {
   padding: 0 2rem; }
 
-.doubleBlock img {
+.double-block img {
   float: left;
   margin-right: 2%;
   width: 49%; }
 
-.doubleBlock img:last-of-type {
+.double-block img:last-of-type {
   margin-right: 0; }
 
-.mugBlock {
+.mug-block {
   max-width: 150px;
   margin-left: calc((100% - 650px) / 2);
   float: left;
@@ -500,12 +500,12 @@ VIII. IMAGE, WIDE, FULL AND INLINE BLOCKS
   margin-top: 5px; }
 
 @media (max-width: 740px) {
-  .doubleBlock img {
+  .double-block img {
     float: none;
     margin-right: 0;
     width: 100%; }
 
-  .mugBlock {
+  .mug-block {
     margin-left: 0;
     max-width: 125px; } }
 /*
@@ -540,37 +540,21 @@ IX. PULLQUOTES
     line-height: 3rem; } }
 /*
 -------------------------------------------
-X. NDN EMBEDS
--------------------------------------------
-*/
-.ndn_embed {
-  margin: 4.8rem auto;
-  max-width: 650px;
-  min-height: 170px;
-  position: relative;
-  width: 100%;
-  z-index: 0; }
-
-.ndn_embed p {
-  font-family: Arial, sans-serif !important; }
-
-/*
--------------------------------------------
 XI. VIDEO EMBEDS
 -------------------------------------------
 */
-.videoBlock {
+.video-block {
   width: 100%;
   max-width: 650px;
   margin: 4.8rem auto; }
 
-.videoWrapper {
+.video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 25px;
   height: 0; }
 
-.videoWrapper iframe, .videoWrapper embed {
+.video-wrapper iframe, .video-wrapper embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -582,18 +566,18 @@ XI. VIDEO EMBEDS
 XII. RELATED LINKS AND FACT BOXES
 -------------------------------------------
 */
-.relatedLinks a {
+.related-links a {
   display: block;
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 1.8rem;
   margin-bottom: 1.8rem; }
 
-.relatedLinks a:last-child {
+.related-links a:last-child {
   margin-bottom: 0; }
 
 @media (max-width: 740px) {
-  .relatedLinks, .factBox {
+  .related-links, .fact-box {
     border-bottom: 1px solid #323232;
     border-top: 1px solid #323232;
     padding: 2.4rem 0; } }
@@ -602,57 +586,57 @@ XII. RELATED LINKS AND FACT BOXES
 XIII. BREAKOUT MODULES
 -------------------------------------------
 */
-.breakoutModule {
+.breakout-module {
   margin: 4.8rem auto;
   width: 95%; }
 
-.breakoutModule h5 {
+.breakout-module h5 {
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
   font-weight: bold; }
 
-.breakoutModule img {
+.breakout-module img {
   margin-bottom: .3rem;
   width: 100%; }
 
-.breakoutModule p {
+.breakout-module p {
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 1.8rem; }
 
-.breakoutBox {
+.breakout-box {
   float: left;
   margin-right: 2%; }
 
-.breakoutBox:last-child {
+.breakout-box:last-child {
   margin-right: 0; }
 
-.twoAcross .breakoutBox {
+.two-across .breakout-box {
   width: 49%; }
 
-.threeAcross .breakoutBox {
+.three-across .breakout-box {
   width: 32%; }
 
-.fourAcross .breakoutBox {
+.four-across .breakout-box {
   width: 23.5%; }
 
 @media (max-width: 740px) {
-  .breakoutModule {
+  .breakout-module {
     border-bottom: 1px solid #323232;
     border-top: 1px solid #323232;
     margin: 4.8rem auto;
     padding: 2.4rem 0; }
 
-  .breakoutModule img {
+  .breakout-module img {
     float: left;
     margin-right: 1rem;
     width: 50%; }
 
-  .twoAcross .breakoutBox, .threeAcross .breakoutBox, .fourAcross .breakoutBox {
+  .two-across .breakout-box, .three-across .breakout-box, .four-across .breakout-box {
     margin-bottom: 1.2rem;
     float: none;
     width: 100%; }
 
-  .breakoutBox:last-child {
+  .breakout-box:last-child {
     margin-bottom: 0; } }
 /*
 -------------------------------------------
@@ -667,7 +651,7 @@ XIV. SLIDESHOWS
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
   color: #797470; }
 
-.slideContainer {
+.slide-container {
   overflow: hidden;
   position: relative;
   width: 100%; }
@@ -683,7 +667,7 @@ XIV. SLIDESHOWS
   transition: all .3s ease-out;
   width: 100%; }
 
-.slideButton {
+.slide-button {
   background-color: white;
   cursor: pointer;
   display: block;
@@ -697,10 +681,10 @@ XIV. SLIDESHOWS
   transition: opacity .3s ease-out;
   width: 5rem; }
 
-.slideButton:hover {
+.slide-button:hover {
   opacity: 1; }
 
-.nextButton {
+.next-button {
   right: 0; }
 
 .slide img {
@@ -711,16 +695,16 @@ XIV. SLIDESHOWS
   opacity: 1;
   position: relative; }
 
-.preSlide {
+.pre-slide {
   margin-left: 100%;
   opacity: 1; }
 
-.postSlide {
+.post-slide {
   margin-left: -100%;
   opacity: 0; }
 
 @media (max-width: 600px) {
-  .slideButton {
+  .slide-button {
     width: 3rem;
     height: 3rem; } }
 /*
@@ -826,16 +810,16 @@ XVII. DROP DOWN LIST
   cursor: pointer;
   transition: color .25s ease-out; }
 
-.dropList .dropHed {
+.drop-list .drop-hed {
   cursor: pointer; }
 
-.dropList .dropItem {
+.drop-list .drop-item {
   background-color: #f0f0f0;
   border-radius: 2px;
   margin-bottom: .6rem;
   padding: 1rem; }
 
-.dropList .dropHed span.cardinal {
+.drop-list .drop-hed span.cardinal {
   background-color: #A8A8A8;
   border-radius: 50%;
   color: white;
@@ -849,26 +833,26 @@ XVII. DROP DOWN LIST
   text-indent: -1px;
   width: 2.4rem; }
 
-.dropList .dropHed h5 {
+.drop-list .drop-hed h5 {
   float: left;
   margin-bottom: 0;
   width: calc(100% - 7rem); }
 
-.dropList .dropHed .fa {
+.drop-list .drop-hed .fa {
   color: #5CA3E6;
   float: right;
   font-size: 2rem;
   line-height: 2.4rem;
   margin: 0 1rem; }
 
-.dropList .dropText {
+.drop-list .drop-text {
   display: none;
   padding: 1rem 4rem 1rem 3.4rem; }
 
-.dropList .expandedText {
+.drop-list .expanded-text {
   display: block; }
 
-.dropList p.dropText {
+.drop-list p.drop-text {
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 1.8rem; }

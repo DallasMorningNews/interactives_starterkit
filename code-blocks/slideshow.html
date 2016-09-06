@@ -1,52 +1,52 @@
 			<!-- SLIDESHOW INSTRUCTIONS -->
 
-			<!-- 
-				— To add a new slide, copy the last 'slide' div 
+			<!--
+				— To add a new slide, copy the last 'slide' div
 				— Only the first and second slide should have their srcset and src attributes filled in on the img tag
 				— Each additional slide should have srcset and src information contained within the data-srcset and data-default attributes for that particular slide div. The script will use this to load the images later.
 				- Fill in the subject in the h4 tag in the slideshow
 
-				ALSO, THIS IS IMPORTANT: 
+				ALSO, THIS IS IMPORTANT:
 				- open the customJS.js file and make sure to uncomment the javascript for the slideshow. There are two lines of code you need to delete there that are marked for deletion
-				- If you want to be able to swipe through the slideshow on mobile, you must un-comment out the call for jquery swipe controls in the head section of the index file. This is found around line 56 of index.html  
+				- If you want to be able to swipe through the slideshow on mobile, you must un-comment out the call for jquery swipe controls in the head section of the index file. This is found around line 56 of index.html
 			-->
 
-			<div class="slideshow clearFix" id="slideshowA">
+			<div class="slideshow clearfix" id="slideshowA">
 				<h5>Slideshow: Header goes here</h5>
-				<div class="slideContainer">
+				<div class="slide-container">
 					<div class="slide current" data-srcset="" data-default="images/defaultImage.jpg">
 						<img srcset="" sizes="(min-width: 1500px) 1400px, 90vw" src="images/defaultImage.jpg" alt="Alt text goes here" />
 						<p class="cutline">This is my cutline and it goes in this spot here</p>
 					</div>
 
-					<div class="slide preSlide" data-srcset="" data-default="images/defaultImage.jpg">
+					<div class="slide pre-slide" data-srcset="" data-default="images/defaultImage.jpg">
 						<img srcset="" sizes="(min-width: 1500px) 1400px, 90vw" src="images/defaultImage.jpg" alt="Alt text goes here" />
 						<p class="cutline">This is my cutline and it goes in this spot here</p>
 					</div>
 
-					<div class="slide preSlide" data-srcset="" data-default="images/defaultImage.jpg">
+					<div class="slide pre-slide" data-srcset="" data-default="images/defaultImage.jpg">
 						<img srcset="" sizes="(min-width: 1500px) 1400px, 90vw" src="" alt="Alt text goes here" />
 						<p class="cutline">This is my cutline and it goes in this spot here</p>
 					</div>
 
-					<div class="slide preSlide" data-srcset="" data-default="images/defaultImage.jpg">
+					<div class="slide pre-slide" data-srcset="" data-default="images/defaultImage.jpg">
 						<img srcset="" sizes="(min-width: 1500px) 1400px, 90vw" src="" alt="Alt text goes here" />
 						<p class="cutline">This is my cutline and it goes in this spot here</p>
 					</div>
 
-					<div class="slide preSlide" data-srcset="" data-default="images/defaultImage.jpg">
+					<div class="slide pre-slide" data-srcset="" data-default="images/defaultImage.jpg">
 						<img srcset="" sizes="(min-width: 1500px) 1400px, 90vw" src="" alt="Alt text goes here" />
 						<p class="cutline">This is my cutline and it goes in this spot here</p>
 					</div>
 
-					<div class="slide preSlide" data-srcset="" data-default="images/defaultImage.jpg">
+					<div class="slide pre-slide" data-srcset="" data-default="images/defaultImage.jpg">
 						<img srcset="" sizes="(min-width: 1500px) 1400px, 90vw" src="" alt="Alt text goes here" />
 						<p class="cutline">This is my cutline and it goes in this spot here</p>
 					</div>
 
-					<img class="nextButton slideButton" src="images/buttonRight.svg" alt="Click to advance slideshow" />
-					<img class="previousButton slideButton" src="images/buttonLeft.svg" alt="Click to rewind slideshow" />
-					
+					<img class="next-button slide-button" src="images/buttonRight.svg" alt="Click to advance slideshow" />
+					<img class="previous-button slide-button" src="images/buttonLeft.svg" alt="Click to rewind slideshow" />
+
 				</div>
 				<!-- end slideContainer -->
 			</div>
