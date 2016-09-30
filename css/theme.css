@@ -365,7 +365,8 @@ p.subhead {
   color: #323232;
   font-size: 2.4rem;
   line-height: 3.6rem;
-  margin: 4.8rem auto 2.4rem auto; }
+  margin: 4.8rem auto 2.4rem auto;
+  font-weight: bold; }
 
 @media (max-width: 860px) {
   #story-head h1 {
@@ -886,8 +887,8 @@ XIX. ADS
 -------------------------------------------
 */
 .ad {
-  border-bottom: 1px solid #323232;
-  border-top: 1px solid #323232;
+  border-bottom: 1px solid #d7d7d7;
+  border-top: 1px solid #d7d7d7;
   margin: 4.8rem 0;
   padding: 3.6rem 0;
   position: relative;
