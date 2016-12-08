@@ -48,6 +48,15 @@ body {
   line-height: 1;
   z-index: 0;
   position: relative;
+  min-height: 100%;
+  display: block;
+  padding-bottom: 200px;
+  @media (max-width: 650px) {
+      padding-bottom: 225px;
+  }
+  @media (max-width: 450px) {
+      padding-bottom: 250px;
+  }
 }
 ol, ul {
   list-style: none;
@@ -63,6 +72,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+a[href^="x-apple-data-detectors:"] {color: inherit;text-decoration: inherit;font-weight: inherit;}
 
 .clearfix:after {
   content: "";
@@ -104,7 +114,7 @@ II. KASON TEMPLATE STYLES, HEADER AND FOOTER
 }
 
 .logo {
-  background-image: url('http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/_dmn_logo.png');
+  background-image: url('../images/_dmn_logo.svg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: left center;
@@ -132,72 +142,170 @@ II. KASON TEMPLATE STYLES, HEADER AND FOOTER
 }
 
 .interactive-footer {
-  background-color: #b0bcc4;
   min-height: 97px;
-  padding: 20px 10px;
+  padding-bottom: 24px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: block;
 }
 
-.back-to-top {
-  background-color: rgb(255,255,255);
-  color: #b0bcc4;
-  margin-right: 6px;
-  font-size: 14px;
+.footer-content {
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+    img {
+        max-width: 225px;
+    }
 }
 
-.interactive-footer a, .interactive-footer p {
-  color: white;
+.footer-social {
+    float: right;
+    position: relative;
+    top: 5px;
+    li {
+        margin-right: 5px;
+        float: left;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+    a {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    #footer-facebook, #footer-twitter {
+        background: url("http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/socialSprites.svg");
+        background-size: 120px 60px;
+    }
+    #footer-twitter {
+        background-position: 90px 0px;
+    }
+    #footer-instagram, #footer-youtube {
+        background: url("http://interactives.templates.statics.s3.amazonaws.com/v1.0/images/socialSprites2.svg");
+        background-size: 60px 60px;
+    }
+    #footer-youtube {
+        background-position: 30px 0px;
+    }
+    #footer-facebook:hover {
+        background-position: 120px 30px;
+    }
+    #footer-twitter:hover {
+        background-position: 90px 30px;
+    }
+    #footer-instagram:hover {
+        background-position: 60px 30px;
+    }
+    #footer-youtube:hover {
+        background-position: 30px 30px;
+    }
+}
+
+.footer-links {
+    width: calc(100% - 65px);
+    margin-left: 65px;
+    border-top: 1px solid rgb(235,235,235);
+    position: relative;
+    top: -15px;
+    padding-top: 10px;
 }
 
 .interactive-footer a {
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  margin-left: 20px;
+  font-size: 12px;
+  line-height: 20px;
   font-weight: normal;
-}
-
-a.top {
-  display: block;
-  float: left;
-  margin: 0 0 12px 0;
-  margin-left: 0;
-}
-.terms-privacy {
-  float: right;
-  padding-top: 4px;
-}
-
-.terms-privacy:after {
-  content:'';
-  display: table;
-  clear: both;
+  font-weight: bold;
+  color: rgb(50,50,50);
+  cursor: pointer;
 }
 
 .interactive-footer p {
-  clear: both;
-  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
-  font-size: 14px;
-  letter-spacing: -.5px;
-  line-height: 18px;
-  margin-bottom: 0;
+    font-family:"PT Serif", Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(121,121,121);
+    float: right;
 }
 
-@media (max-width: 500px) {
-  a.top {
-    float: none;
-    margin: 0 0 6px 0;
-  }
+.footer-links a {
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
 
-  .terms-privacy {
-    float: none;
-    margin: 0 0 24px;
-    padding: 0 0;
-  }
-  .terms-privacy a {
+.footer-links a:hover {
+    text-decoration: none;
+    color: $dmnblue;
+}
+
+.footer-links li {
     float: left;
-    margin: 0 0;
-    width: 50%;
-  }
+    margin-right: 22px;
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1150px) {
+    .footer-content {
+        img {
+            width: 150px;
+        }
+    }
+    .footer-social {
+        top: 5px;
+    }
+    .footer-links {
+        width: 100%;
+        margin-left: 0;
+        top: 5px;
+        li {
+            margin-right: 11px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer-links ul {
+        width: 100%;
+        display: block;
+    }
+    .interactive-footer p {
+        clear: both;
+        float: none;
+        padding-top: 1.2rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer-links li {
+        width: 33%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .footer-content {
+        img {
+            width: 125px;
+            position: relative;
+            top: 5px;
+        }
+    }
+    .footer-links {
+        top: 10px;
+    }
+    .footer-links li {
+        width: 50%;
+    }
+    .interactive-footer p {
+        letter-spacing: -.2px;
+    }
 }
 
 @media print {
@@ -227,6 +335,7 @@ III. GLOBAL ARTICLE STYLES
 html {
   font-size: 10px;
   color: rgb(33,33,33);
+  height: 100%;
 }
 article {
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
@@ -245,7 +354,6 @@ a:visited {
   font-weight: bold;
 }
 #content {
-  padding: 0rem 0 5rem;
   position: relative;
 }
 h1, h2, h3, h4 {
@@ -279,7 +387,35 @@ h6 {
   line-height: 1.8rem;
 }
 
-
+.int-btn {
+    font-family: $sans;
+    display: block;
+    border: none;
+    background-color: $dmnblue;
+    min-width: 150px;
+    color: white;
+    font-weight: bold;
+    @include type(1.4rem, 4.2rem, 2.4rem);
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 0 5px;
+    @include transition(all, .2s, ease-out);
+    &:hover {
+        background-color: darken($dmnblue, 5%);
+        color: white;
+        box-shadow: 0 1px 2px rgba(0,0,0,.25);
+    }
+    &:active {
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+        outline: none;
+    }
+}
+.btn-red {
+    background-color: $chartRed;
+    &:hover {
+        background-color: darken($chartRed, 5%);
+    }
+}
 
 /*
 -------------------------------------------
@@ -523,7 +659,7 @@ VIII. IMAGE, WIDE, FULL AND INLINE BLOCKS
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
   font-size: 1.3rem;
   line-height: 1.8rem;
-  color: #797470;
+  color: $black66;
   font-weight: normal;
 }
 .image-block {
@@ -553,12 +689,15 @@ VIII. IMAGE, WIDE, FULL AND INLINE BLOCKS
 }
 
 .mug-block {
-    max-width: 150px;
+    max-width: 100px;
     margin-left: calc((100% - 650px) / 2);
     float: left;
     margin-right: 20px;
     margin-bottom: 20px;
     margin-top: 5px;
+    .cutline {
+        @include type(1.3rem, 1.4rem, 0);
+    }
 }
 
 @media (max-width: 740px) {
@@ -570,7 +709,7 @@ VIII. IMAGE, WIDE, FULL AND INLINE BLOCKS
 
   .mug-block {
       margin-left: 0;
-      max-width: 125px;
+      max-width: 75px;
   }
 }
 
@@ -737,7 +876,7 @@ XIV. SLIDESHOWS
 }
 .slideshow h5 {
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
-  color: #797470;
+  color: $black66;
 }
 .slide-container {
   overflow: hidden;
@@ -821,8 +960,8 @@ XV. CREDIT LINKS
   margin: 0 2rem 0rem 0;
 }
 .credits a {
-  color: #212121;
-  font-weight: normal;
+  color: $black50;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -833,10 +972,8 @@ XVI. MORE LINKS
 */
 
 .more {
-  border-bottom: 1px solid #323232;
-  margin: 4.8rem auto 6rem;
+  margin: 4.8rem auto 0;
   max-width: 650px;
-  padding-bottom: 2.4rem;
 }
 .more h5, .more p, .more a {
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
@@ -872,37 +1009,36 @@ XVI. MORE LINKS
 @media (max-width: 600px) {
   .more a {
     float: none;
-    margin: 0 0 2.4rem;
+    margin: 0 0 1.2rem;
     width: 100%;
     border-bottom: 1px solid $black215;
-    padding-bottom: 2.4rem;
+    padding-bottom: 1.2rem;
+    &:last-of-type {
+        border-bottom: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
   }
   .more a img {
     float: left;
     width: 33%;
+    margin-bottom: 0;
   }
   .more a h6, .more a p {
     float: right;
-    width: 65%;
+    width: 63%;
   }
   .more a h6 {
     margin-top: -.3rem;
+    margin-bottom: .6rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
   }
-}
-
-@media (max-width: 400px) {
-    .more a {
-        margin-bottom: 3.6rem;
-    }
-    .more a img {
-        float: none;
-        width: 100%;
-        margin-bottom: .6rem;
-    }
-    .more a h6, .more a p {
-        width: 100%;
-        float: none;
-    }
+  .more a p {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      letter-spacing: 0;
+  }
 }
 
 /*
