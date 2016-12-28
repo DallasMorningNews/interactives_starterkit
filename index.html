@@ -46,24 +46,10 @@
 	<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link rel="canonical" href="URL GOES HERE" />
 
-	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
-	  <script type="text/javascript">
-	    WebFont.load({
-			custom: {
-				families: ["Gotham A", "Gotham B"],
-			},
-	      	google: { //change custom to google: if using google cdn font
-	        	families: ['PT+Serif'],
-	      	}
-	    });
-	</script>
 	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-
 	<script type="text/javascript">
-
-   document.writeln('<sc' + 'ript type="text/javascript" src="http://res.dallasnews.com/reg/js/tp_jsinclude.js' + '"></sc' + 'ript>');
-
-  </script>
+   		document.writeln('<sc' + 'ript type="text/javascript" src="http://res.dallasnews.com/reg/js/tp_jsinclude.js' + '"></sc' + 'ript>');
+  	</script>
 
 	<!-- Un-note the following line to use bowser.js (for browser type and version detection) -->
 	<!-- <script src="http://interactives.templates.statics.s3.amazonaws.com/v1.0/js/bowser.min.js"></script> -->
@@ -151,8 +137,37 @@
 	<!-- end Google Tag Manager DMN -->
 	<script type="text/javascript" src="http://res.dallasnews.com/resources/cobrand/js/blogs/parselyDynamicTracking.js"></script>
 
-	<header class="bg-black">
+	<header class="bg-black clearfix">
 		<a class="logo" href="http://www.dallasnews.com" id="top"><span class="sr-only">The Dallas Morning News</span></a>
+
+		<div id="header-nav">
+				<div class="header-group" id="header-topics">
+					<ul>
+						<li><a href="http://www.dallasnews.com/">Home</a></li>
+						<li><a href="http://www.dallasnews.com/news">News</a></li>
+						<li><a href="http://www.dallasnews.com/business">Business</a></li>
+						<li><a href="http://sportsday.dallasnews.com/">Sports</a></li>
+						<li><a href="http://www.guidelive.com/">Entertainment</a></li>
+						<li><a href="http://www.dallasnews.com/life">Life</a></li>
+						<li><a href="http://www.dallasnews.com/arts">Arts</a></li>
+						<li><a href="http://www.dallasnews.com/opinion">Opinion</a></li>
+					</ul>
+					<button>Topics</button>
+				</div>
+
+				<div class="header-group" id="header-account">
+					<ul>
+						<li class="logged-out"><a href="https://myaccount.dallasnews.com/signin.html">Sign in</a></li>
+						<li class="logged-in"><a href="https://myaccount.dallasnews.com/account/index">Account settings</a></li>
+						<li><a href="https://myaccount.dallasnews.com/select-device.html">Today's Epaper</a></li>
+						<li class="logged-in"><a href="https://reg.dallasnews.com/atypon/signout.do?fw=http%3A//www.dallasnews.com">Log out</a></li>
+						<li class="logged-out"><a href="https://join.dallasnews.com/subscribe?_referrer=interactives">Subscribe</a></li>
+					</ul>
+					<button>My Account</button>
+				</div>
+		</div>
+
+		<a id="subscribe" href="https://join.dallasnews.com/subscribe?_referrer=interactives">Subscribe now</a>
 	</header>
 
 	<article id="content">
@@ -180,7 +195,7 @@
     		<!-- end bylineBlock -->
 
       		<div class="shareComments shareCommentsTop">
-				<ul id="share-bar1" class="width-auto-hack"></ul>
+				<ul id="share-bar1"></ul>
 			</div>
 			<!-- end shareComments -->
 
