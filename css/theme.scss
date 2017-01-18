@@ -158,7 +158,7 @@ II. HEADER AND FOOTER
                 text-decoration: none;
                 color: white;
                 &:hover {
-                    color: $dmnblue;
+                    color: $dmnblue !important;
                     cursor: pointer;
                 }
                 &:visited {

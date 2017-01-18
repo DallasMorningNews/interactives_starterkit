@@ -153,7 +153,7 @@ II. HEADER AND FOOTER
         text-decoration: none;
         color: white; }
         .header-group ul li a:hover {
-          color: #0185d3;
+          color: #0185d3 !important;
           cursor: pointer; }
         .header-group ul li a:visited {
           color: white; }
