@@ -4,26 +4,15 @@
 /*
 TABLE OF CONTENTS
 -----------------
-
 I     CSS RESET
-II    HEADER AND FOOTER
-III   GLOBAL ARTICLE STYLES
-IV    CONTENT HEADER
-V     CONTENT WELL
-VI    STORY HEAD, BYLINES AND INTRO
-VII   SIDE BLOCKS AND INLINE BLOCKS
-VIII  IMAGE, WIDE, FULL AND INLINE BLOCKS
-IX    PULLQUOTES
-X     NDN EMBEDS
-XI    YOUTUBE EMBEDS
-XII   RELATED LINKS AND FACT BOXES
-XIII  BREAKOUT BOXES
-XIV   SLIDESHOWS
-XV    CREDIT LINKS
-XVI   MORE LINKS
-XVII  DROP DOWN BULLETS
-XVIII SYNOPSIS BLOCKS
-XIX   ADS
+II    GLOBAL ARTICLE STYLES
+III   CONTENT HEADER
+IV    CONTENT WELL
+V     STORY HEAD, BYLINES AND INTRO
+VI    FULL, WIDE, INLINE IMAGE BLOCKS
+VII   CREDIT LINKS
+VIII  MORE LINKS
+IX    ADS
 
 /*
 -------------------------------------------
@@ -84,7 +73,7 @@ a[href^="x-apple-data-detectors:"] {color: inherit;text-decoration: inherit;font
 
 /*
 -------------------------------------------
-III. GLOBAL ARTICLE STYLES
+II. GLOBAL ARTICLE STYLES
 -------------------------------------------
 */
 
@@ -181,7 +170,7 @@ h6 {
 
 /*
 -------------------------------------------
-IV. CONTENT HEADER
+III. CONTENT HEADER
 -------------------------------------------
 */
 
@@ -199,7 +188,7 @@ IV. CONTENT HEADER
 
 /*
 -------------------------------------------
-V. CONTENT WELL
+IV. CONTENT WELL
 -------------------------------------------
 */
 
@@ -234,7 +223,7 @@ V. CONTENT WELL
 
 /*
 -------------------------------------------
-VI. STORY HEAD, BYLINES AND INTRO
+V. STORY HEAD, BYLINES AND INTRO
 -------------------------------------------
 */
 
@@ -357,64 +346,7 @@ p.subhead {
 
 /*
 -------------------------------------------
-VII. SIDE BLOCKS & INLINE BLOCKS
--------------------------------------------
-*/
-
-.side-block {
-  max-width: 400px;
-  width: 100%;
-  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
-}
-.inline-block {
-  max-width: 650px;
-  width: 100%;
-  margin: 4.8rem auto;
-  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
-}
-.side-block p, .inline-block p {
-  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
-}
-.side-block h4, .side-block h5, .side-block h6, .inline-block h4 {
-  font-weight: bold;
-  color: #212121;
-}
-.side-block img, .inline-block img {
-  margin: 0 0 .3rem 0;
-  width: 100%;
-}
-.right-block {
-  float: right;
-  margin: 0 0 4.8rem 4.8rem;
-}
-.left-block {
-  float: left;
-  margin: 0 4.8rem 4.8rem 0;
-}
-p.source {
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  color: #797470;
-  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
-}
-
-@media (max-width: 740px) {
-  .right-block, .left-block {
-    float: none;
-    margin: 4.8rem auto 4.8rem;
-    width: 100%;
-    max-width: 650px;
-  }
-  .graphic-block {
-    max-width: 400px;
-  }
-}
-
-/*
--------------------------------------------
-VIII. IMAGE, WIDE, FULL AND INLINE BLOCKS
+VI. IMAGE, WIDE, FULL AND INLINE BLOCKS
 -------------------------------------------
 */
 .cutline {
@@ -431,25 +363,39 @@ VIII. IMAGE, WIDE, FULL AND INLINE BLOCKS
   margin-bottom: .3rem;
   width: 100%;
 }
+.inline-block {
+  max-width: 650px;
+  width: 100%;
+  margin: 4.8rem auto;
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+}
+.inline-block p {
+  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+.inline-block h4 {
+  font-weight: bold;
+  color: #212121;
+}
+.inline-block img {
+  margin: 0 0 .3rem 0;
+  width: 100%;
+}
 .wide-block, .full-block {
   margin: 4.8rem auto;
 }
-
 .full-block p.cutline {
   padding: 0 2rem;
 }
-
-
 .double-block img {
   float: left;
   margin-right: 2%;
   width: 49%;
 }
-
 .double-block img:last-of-type {
   margin-right: 0;
 }
-
 .mug-block {
     max-width: 100px;
     margin-left: calc((100% - 650px) / 2);
@@ -461,7 +407,6 @@ VIII. IMAGE, WIDE, FULL AND INLINE BLOCKS
         @include type(1.3rem, 1.4rem, 0);
     }
 }
-
 @media (max-width: 740px) {
   .double-block img {
     float: none;
@@ -478,209 +423,7 @@ VIII. IMAGE, WIDE, FULL AND INLINE BLOCKS
 
 /*
 -------------------------------------------
-IX. PULLQUOTES
--------------------------------------------
-*/
-
-.pullquote {
-  border-top: 1px solid #323232;
-  border-bottom: 1px solid #323232;
-  font-size: 2.4rem;
-  line-height: 4.8rem;
-  padding: 2.4rem 0;
-  text-align: left;
-}
-.pullquote blockquote {
-  margin-bottom: 2.4rem;
-  font-family: "PT Serif", Georgia, Times, serif;
-  color: #212121;
-}
-.pullquote p.attribution {
-  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
-  color: $black66;
-  text-align: right;
-}
-.pullquote p.attribution:before {
-  content: '— ';
-}
-
-@media (max-width: 600px) {
-  .pullquote {
-    font-size: 2rem;
-    line-height: 3rem;
-  }
-}
-
-
-/*
--------------------------------------------
-XI. VIDEO EMBEDS
--------------------------------------------
-*/
-
-.video-block {
-  width:100%;
-  max-width: 650px;
-  margin: 4.8rem auto;
-}
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 25px;
-  height: 0;
-}
-.video-wrapper iframe, .video-wrapper embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-
-
-
-/*
--------------------------------------------
-XIII. BREAKOUT MODULES
--------------------------------------------
-*/
-
-.breakout-module {
-  margin: 4.8rem auto;
-  width: 95%;
-}
-.breakout-module h5 {
-  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
-  font-weight: bold;
-}
-.breakout-module img {
-  margin-bottom: .3rem;
-  width: 100%;
-}
-.breakout-module p {
-  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
-}
-.breakout-box {
-  float: left;
-  margin-right: 2%;
-}
-.breakout-box:last-child {
-  margin-right: 0;
-}
-.two-across .breakout-box {
-  width: 49%;
-}
-.three-across .breakout-box {
-  width: 32%;
-}
-.four-across .breakout-box {
-  width: 23.5%;
-}
-
-@media (max-width: 740px) {
-  .breakout-module {
-    border-bottom: 1px solid #323232;
-    border-top: 1px solid #323232;
-    margin: 4.8rem auto;
-    padding: 2.4rem 0;
-  }
-  .breakout-module img {
-    float: left;
-    margin-right: 1rem;
-    width: 50%;
-  }
-  .two-across .breakout-box, .three-across .breakout-box, .four-across .breakout-box {
-    margin-bottom: 1.2rem;
-    float: none;
-    width: 100%;
-  }
-  .breakout-box:last-child {
-    margin-bottom: 0;
-  }
-}
-
-/*
--------------------------------------------
-XIV. SLIDESHOWS
--------------------------------------------
-*/
-
-
-.slideshow {
-  margin: 4.8rem auto;
-  max-width: 1000px;
-}
-.slideshow h5 {
-  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
-  color: $black66;
-}
-.slide-container {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-.slide {
-  float: left;
-  left: 0;
-  position: absolute;
-  top: 0;
-  -webkit-transition: all .3s ease-out;
-  -moz-transition: all .3s ease-out;
-  -o-transition: all .3s ease-out;
-  transition: all .3s ease-out;
-  width: 100%;
-}
-.slide-button {
-  background-color: white;
-  cursor: pointer;
-  display: block;
-  height: 5rem;
-  opacity: .8;
-  position: absolute;
-  top: 50%;
-  -webkit-transition: opacity .3s ease-out;
-  -moz-transition: opacity .3s ease-out;
-  -o-transition: opacity .3s ease-out;
-  transition: opacity .3s ease-out;
-  width: 5rem;
-}
-.slide-button:hover {
-  opacity: 1;
-}
-.next-button {
-  right: 0;
-}
-.slide img {
-  width: 100%;
-}
-.current {
-  margin-left: 0;
-  opacity: 1;
-  position: relative;
-}
-.pre-slide {
-  margin-left: 100%;
-  opacity: 1;
-}
-.post-slide {
-  margin-left: -100%;
-  opacity: 0;
-}
-
-@media (max-width: 600px) {
-  .slide-button {
-    width: 3rem;
-    height: 3rem;
-  }
-}
-
-
-/*
--------------------------------------------
-XV. CREDIT LINKS
+VII. CREDIT LINKS
 -------------------------------------------
 */
 
@@ -706,7 +449,7 @@ XV. CREDIT LINKS
 
 /*
 -------------------------------------------
-XVI. MORE LINKS
+VIII. MORE LINKS
 -------------------------------------------
 */
 
@@ -782,92 +525,7 @@ XVI. MORE LINKS
 
 /*
 -------------------------------------------
-XVII. DROP DOWN LIST
--------------------------------------------
-*/
-
-.fa-twitter{
-  color: #5CA3E6;
-  cursor: pointer;
-  transition: color .25s ease-out;
-}
-.drop-list .drop-hed {
-  cursor: pointer;
-}
-.drop-list .drop-item {
-  background-color: $black235;
-  border-radius: 2px;
-  margin-bottom: .6rem;
-  padding: 1rem;
-}
-.drop-list .drop-hed span.cardinal {
-  background-color: #A8A8A8;
-  border-radius: 50%;
-  color: white;
-  float: left;
-  font-size: 1.8rem;
-  height: 2.4rem;
-  letter-spacing: -1px;
-  line-height: 2.2rem;
-  margin-right: 1rem;
-  text-align: center;
-  text-indent: -1px;
-  width: 2.4rem;
-}
-.drop-list .drop-hed h5 {
-  float: left;
-  margin-bottom: 0;
-  width: calc(100% - 7rem);
-}
-.drop-list .drop-hed .fa{
-  color: #5CA3E6;
-  float: right;
-  font-size: 2rem;
-  line-height: 2.4rem;
-  margin:0 1rem;
-}
-.drop-list .drop-text {
-  display: none;
-  padding: 1rem 4rem 1rem 3.4rem;
-}
-.drop-list .expanded-text {
-  display: block;
-}
-.drop-list p.drop-text {
-  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
-}
-
-/*
--------------------------------------------
-XVIII. SYNOPSIS BOXES
--------------------------------------------
-*/
-
-.synopsis {
-  border-bottom: 1px solid #323232;
-  padding-bottom: 2.4rem;
-}
-
-.synopsis h6 {
-  margin-bottom: .9rem;
-  font-weight: bold;
-  color: #212121;
-  text-transform: uppercase;
-}
-.synopsis p {
-  font-style: italic;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
-  margin-bottom: .9rem;
-  color: $black66;
-  cursor: pointer;
-}
-
-/*
--------------------------------------------
-XIX. ADS
+IX. ADS
 -------------------------------------------
 */
 
