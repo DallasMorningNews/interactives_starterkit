@@ -8,6 +8,7 @@ VIDEO EMBEDS
   width: 100%;
   max-width: 650px;
   margin: 4.8rem auto;
+  font-size: 15px;
   img {
     max-width: 170px !important;
     max-height: 18px !important;
@@ -31,6 +32,15 @@ VIDEO EMBEDS
   .video-block {
     img {
       max-width: 130px !important;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .video-block {
+    img {
+      max-width: 80px !important;
+      max-height: 14px !important;
     }
   }
 }
