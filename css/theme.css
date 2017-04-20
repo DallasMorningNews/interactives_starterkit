@@ -34,13 +34,14 @@ body {
   position: relative;
   min-height: 100%;
   display: block;
-  padding-bottom: 200px; }
+  height: auto !important;
+  padding-bottom: 200px !important; }
   @media (max-width: 650px) {
     body {
-      padding-bottom: 225px; } }
+      padding-bottom: 225px !important; } }
   @media (max-width: 450px) {
     body {
-      padding-bottom: 250px; } }
+      padding-bottom: 250px !important; } }
 
 ol, ul {
   list-style: none; }
