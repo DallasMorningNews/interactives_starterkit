@@ -374,6 +374,9 @@ VI. IMAGE, WIDE, FULL AND INLINE BLOCKS
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 1.8rem;
+  &.cutline {
+    font-size: 1.3rem;
+  }
 }
 .inline-block h4 {
   font-weight: bold;

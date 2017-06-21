@@ -34,8 +34,8 @@ body {
   position: relative;
   min-height: 100%;
   display: block;
-  height: auto !important;
-  padding-bottom: 200px !important; }
+  padding-bottom: 200px !important;
+  height: auto !important; }
   @media (max-width: 650px) {
     body {
       padding-bottom: 225px !important; } }
@@ -348,6 +348,8 @@ VI. IMAGE, WIDE, FULL AND INLINE BLOCKS
   font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 1.8rem; }
+  .inline-block p.cutline {
+    font-size: 1.3rem; }
 
 .inline-block h4 {
   font-weight: bold;
