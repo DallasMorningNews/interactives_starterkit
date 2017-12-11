@@ -5,7 +5,6 @@
 	margin-bottom: $margin;
 }
 
-
 //before and after element setup
 @mixin psuedoElement($width, $height, $position: relative, $content: '') {
 	content: $content;
@@ -15,6 +14,17 @@
 	position: $position;
 }
 
+@mixin dividerBottom($margin, $padding, $border) {
+  margin-bottom: $margin;
+  padding-bottom: $padding;
+  border-bottom: $border;
+}
+
+@mixin dividerTop($margin, $padding, $border) {
+  margin-top: $margin;
+  padding-top: $padding;
+  border-top: $border;
+}
 
 //rotation
 @mixin rotate($deg) {

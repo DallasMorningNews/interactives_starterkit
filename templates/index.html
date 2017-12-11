@@ -25,9 +25,7 @@
 <meta name="twitter:creator" content="@{{authorTwitter}}" />
 
 <meta name="liveFyreID" content="{{id}}" />
-<!--
-<meta name="parsely-page" id='parsely-page' content='{"title": "{{shareTitle}}", "link": "{{url}}", "image_url": "{{imgURL}}", "type": "post", "post_id": "{{id}}", "pub_date": "{{publishDate}}", "section": "{{section}}", "author": ["{{authors}}"], "tags": ["{{keywords|join('","')|safe}}"]}' />
--->
+
 <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -37,7 +35,7 @@
         "thumbnailUrl": "{{imgURL}}",
         "dateCreated": "{{publishDate}}",
         "articleSection": "{{section}}",
-        "creator": ["{{authors}}|join('","')|safe"],
+        "creator": ["{{authors|join('","')|safe}}"],
         "keywords": ["{{keywords|join('","')|safe}}"]
       }
 </script>
@@ -222,7 +220,7 @@ googletag.cmd.push(function () {
 	storyURL = "{{url}}",
 	leadText = "{{shareText}}", //description in tweet card
 	storyIMG = "{{imgURL}}",
-	storyAuthor = "{{authors}}",
+	storyAuthor = "{% for author in authors %}{{author}}{{', ' if not loop.last}}{% endfor %}",
 	twitterTag = "{{sectionTwitter}}",
 	comments = true,
 	share = true;
