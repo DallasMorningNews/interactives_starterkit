@@ -25,8 +25,22 @@
 <meta name="twitter:creator" content="@{{authorTwitter}}" />
 
 <meta name="liveFyreID" content="{{id}}" />
-
+<!--
 <meta name="parsely-page" id='parsely-page' content='{"title": "{{shareTitle}}", "link": "{{url}}", "image_url": "{{imgURL}}", "type": "post", "post_id": "{{id}}", "pub_date": "{{publishDate}}", "section": "{{section}}", "author": ["{{authors}}"], "tags": ["{{keywords|join('","')|safe}}"]}' />
+-->
+<script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "{{shareTitle}}",
+        "url": "{{url}}",
+        "thumbnailUrl": "{{imgURL}}",
+        "dateCreated": "{{publishDate}}",
+        "articleSection": "{{section}}",
+        "creator": ["{{authors}}|join('","')|safe"],
+        "keywords": ["{{keywords|join('","')|safe}}"]
+      }
+</script>
 
 <meta property="og:keywords" content="{{keywords|join(',')}}"/>
 
