@@ -91,12 +91,12 @@ html {
   height: 100%;
 }
 article {
-  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-family: 'Gotham A', 'Gotham B', 'Gotham SSm A', 'Gotham SSm B' Arial, sans-serif;
   width: 100%;
 }
 a {
   color: #0185d3;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
 }
 a:hover {
@@ -104,7 +104,7 @@ a:hover {
 }
 a:visited {
   color: rgb(66,66,66);
-  font-weight: bold;
+  font-weight: 700;
 }
 #content {
   position: relative;
@@ -147,7 +147,7 @@ h6 {
     background-color: $dmnblue;
     min-width: 150px;
     color: white;
-    font-weight: bold;
+    font-weight: 700;
     @include type(1.4rem, 4.2rem, 2.4rem);
     border-radius: 1px;
     cursor: pointer;
@@ -248,11 +248,12 @@ V. STORY HEAD, BYLINES AND INTRO
   line-height: 3.6rem;
 }
 #story-head h3 {
-  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-family: 'Gotham A', 'Gotham B', 'Gotham SSm A', 'Gotham SSm B' Arial, sans-serif;
   font-size: 1.8rem;
   line-height: 2.4rem;
   margin-bottom: 2.4rem;
   text-transform: uppercase;
+  font-weight: 100;
 }
 .byline-block {
   text-align: center;
@@ -261,11 +262,12 @@ V. STORY HEAD, BYLINES AND INTRO
 }
 .byline-block p {
   color: #212121;
-  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-family: 'Gotham A', 'Gotham B', 'Gotham SSm A', 'Gotham SSm B' Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 1.8rem;
   margin: 0 0 .3rem 0;
   text-align: center;
+  font-weight: 100;
   a {
     display: inline-block;
     color: rgb(66,66,66);
@@ -298,7 +300,7 @@ p.subhead {
   font-size: 2.4rem;
   line-height: 3.6rem;
   margin: 4.8rem auto 2.4rem auto;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 @media (max-width: 860px) {
@@ -352,11 +354,11 @@ VI. IMAGE, WIDE, FULL AND INLINE BLOCKS
 -------------------------------------------
 */
 .cutline {
-  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-family: 'Gotham A', 'Gotham B', 'Gotham SSm A', 'Gotham SSm B' Arial, sans-serif;
   font-size: 1.3rem;
   line-height: 1.8rem;
   color: $black66;
-  font-weight: normal;
+  font-weight: 100;
 }
 .image-block {
   width: 100%;
@@ -369,18 +371,20 @@ VI. IMAGE, WIDE, FULL AND INLINE BLOCKS
   max-width: 650px;
   width: 100%;
   margin: 4.8rem auto;
-  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-family: 'Gotham A', 'Gotham B', 'Gotham SSm A', 'Gotham SSm B' Arial, sans-serif;
+  font-weight: 100;
 }
 .inline-block p {
-  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-family: 'Gotham A', 'Gotham B', 'Gotham SSm A', 'Gotham SSm B' Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 1.8rem;
+  font-weight: 100;
   &.cutline {
     font-size: 1.3rem;
   }
 }
 .inline-block h4 {
-  font-weight: bold;
+  font-weight: 700;
   color: #212121;
 }
 .inline-block img {
@@ -441,14 +445,15 @@ VII. CREDIT LINKS
 .credits p {
   display: block;
   float: left;
-  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-family: 'Gotham A', 'Gotham B', 'Gotham SSm A', 'Gotham SSm B' Arial, sans-serif;
   font-size: 1.2rem;
   line-height: 1.8rem;
   margin: 0 2rem 0rem 0;
+  font-weight: 100;
 }
 .credits a {
   color: $black50;
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -463,10 +468,10 @@ VIII. MORE LINKS
   max-width: 650px;
 }
 .more h5, .more p, .more a {
-  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-family: 'Gotham A', 'Gotham B', 'Gotham SSm A', 'Gotham SSm B' Arial, sans-serif;
 }
 .more h5 {
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 2.4rem;
 }
 .more a {
@@ -489,7 +494,7 @@ VIII. MORE LINKS
 .more a p {
   font-size: 1.3rem;
   line-height: 1.8rem;
-  font-weight: normal;
+  font-weight: 100;
   letter-spacing: -.2px;
 }
 
@@ -551,9 +556,9 @@ IX. ADS
   margin: 0 auto !important; }
 
 .ad p {
-  font-family: 'Gotham A', 'Gotham B', Arial, sans-serif;
+  font-family: 'Gotham A', 'Gotham B', 'Gotham SSm A', 'Gotham SSm B' Arial, sans-serif;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: .5rem !important; }
 
 
