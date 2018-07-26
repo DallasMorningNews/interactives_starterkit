@@ -253,7 +253,7 @@ V. STORY HEAD, BYLINES AND INTRO
   line-height: 2.4rem;
   margin-bottom: 2.4rem;
   text-transform: uppercase;
-  font-weight: 100;
+  font-weight: 300;
 }
 .byline-block {
   text-align: center;
@@ -267,7 +267,7 @@ V. STORY HEAD, BYLINES AND INTRO
   line-height: 1.8rem;
   margin: 0 0 .3rem 0;
   text-align: center;
-  font-weight: 100;
+  font-weight: 300;
   a {
     display: inline-block;
     color: rgb(66,66,66);
@@ -358,7 +358,7 @@ VI. IMAGE, WIDE, FULL AND INLINE BLOCKS
   font-size: 1.3rem;
   line-height: 1.8rem;
   color: $black66;
-  font-weight: 100;
+  font-weight: 400;
 }
 .image-block {
   width: 100%;
@@ -372,13 +372,13 @@ VI. IMAGE, WIDE, FULL AND INLINE BLOCKS
   width: 100%;
   margin: 4.8rem auto;
   font-family: Montserrat, Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
 }
 .inline-block p {
   font-family: Montserrat, Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", sans-serif;
   font-size: 1.4rem;
   line-height: 1.8rem;
-  font-weight: 100;
+  font-weight: 400;
   &.cutline {
     font-size: 1.3rem;
   }
@@ -449,11 +449,11 @@ VII. CREDIT LINKS
   font-size: 1.2rem;
   line-height: 1.8rem;
   margin: 0 2rem 0rem 0;
-  font-weight: 100;
+  font-weight: 400;
 }
 .credits a {
   color: $black50;
-  font-weight: 700;
+  font-weight: 900;
   cursor: pointer;
 }
 
@@ -494,7 +494,7 @@ VIII. MORE LINKS
 .more a p {
   font-size: 1.3rem;
   line-height: 1.8rem;
-  font-weight: 100;
+  font-weight: 400;
   letter-spacing: -.2px;
 }
 
@@ -558,7 +558,7 @@ IX. ADS
 .ad p {
   font-family: Montserrat, Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", sans-serif;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: .5rem !important; }
 
 
