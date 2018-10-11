@@ -87,11 +87,11 @@ II. GLOBAL ARTICLE STYLES
 }
 html {
   font-size: 10px;
-  color: rgb(33,33,33);
+  color: $black33;
   height: 100%;
 }
 article {
-  font-family: Montserrat, Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", sans-serif;
+  font-family: $sans;
   width: 100%;
 }
 a {
@@ -103,7 +103,7 @@ a:hover {
   text-decoration: underline;
 }
 a:visited {
-  color: rgb(66,66,66);
+  color: $black66;
   font-weight: 700;
 }
 #content {
@@ -141,30 +141,32 @@ h6 {
 }
 
 .int-btn {
-    font-family: $sans;
-    display: block;
-    border: none;
-    background-color: $dmnblue;
-    min-width: 150px;
-    color: white;
-    font-weight: 700;
-    @include type(1.4rem, 4.2rem, 2.4rem);
-    border-radius: 1px;
-    cursor: pointer;
-    padding: 0 5px;
-    @include transition(all, .2s, ease-out);
-    &:hover {
-        background-color: darken($dmnblue, 5%);
-        color: white;
-        box-shadow: 0 1px 2px rgba(0,0,0,.25);
-    }
-    &:active {
-        box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
-        outline: none;
-    }
+  font-family: $sans;
+  display: block;
+  border: 1px solid darken($dmnblue, 5%);
+  border-radius: 3px;
+  background-color: $dmnblue;
+  min-width: 150px;
+  color: white;
+  font-weight: 700;
+  @include type(1.6rem, 2.4rem, 0);
+  @include transition(all, .25s, ease-out);
+  cursor: pointer;
+  padding: 10px;
+  &:hover {
+      background-color: darken($dmnblue, 5%);
+      color: white;
+      box-shadow: 0 1px 2px rgba(0,0,0,.25);
+  }
+  &:active {
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+      outline: none;
+  }
 }
-.btn-red {
+.int-btn--red {
     background-color: $chartRed;
+    border: 1px solid darken($chartRed, 5%);
+
     &:hover {
         background-color: darken($chartRed, 5%);
     }
