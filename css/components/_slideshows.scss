@@ -42,6 +42,7 @@ SLIDESHOWS
   -o-transition: opacity .3s ease-out;
   transition: opacity .3s ease-out;
   width: 5rem;
+  margin-top: -2.5rem;
 }
 .slide-button:hover {
   opacity: 1;
@@ -70,5 +71,6 @@ SLIDESHOWS
   .slide-button {
     width: 3rem;
     height: 3rem;
+    margin-top: -1.5rem;
   }
 }
