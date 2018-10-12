@@ -261,6 +261,7 @@ The double image block needs an additional image tag within the `image-block` el
 
 ### Mug blocks
 Used to inset a mug-sized photo inside the column well.
+
 **HTML**
 ```html
 <div class="image-block mug-block">
