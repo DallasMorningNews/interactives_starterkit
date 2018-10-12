@@ -1,5 +1,8 @@
 # interactives_starterkit
 
+####Style guide
+
+Our interactives style guide can be found at [here](https://github.com/DallasMorningNews/interactives_starterkit/blob/master/style-guide/style-guide.md).
 
 ####Ads
 
@@ -7,11 +10,10 @@ The code that runs ads is in the head section of the index.html file. There is c
 
 To have more than one ad position, you must un-comment out the blocks of code for adSlot1 (the second ad) and adSlot2 (the third ad) in both spots.
 
-Ad blocks have their own html code in the code blocks folders. ad-blockTop is the first ad, ad-blockMiddle the second, and ad-blockBottom the third.
+Ad blocks have their own html code in the code blocks folders. To include ads, add `{%include "adblock1.html" %}`, `{%include "adblock2.html" %}` and `{%include "adblock3.html" %}` where you want to place them in your `index.html` file.
+
 
 [HTML TextFixer](http://www.textfixer.com/html/convert-text-html.php)
-
-[TheShrinkRay](http://theshrinkray.herokuapp.com/)
 
 ## Interactives app
 
@@ -23,12 +25,15 @@ The `templates` directory contains Nunjucks templates:
 - index.html
 - base.html
 
-**Important:** Any changes to the template need to be duplicated across these template files and the `index.html` in this repo's outer directory.
+**Important:** Any changes to the template need to be duplicated across these template files.
 
 #### statics
 
-The app also pulls in static assets: 
+The app also pulls in static assets:
 - theme.scss
 - _mixins.scss
 - _variables.scss
-- customJS.js
+- customES6.js
+- css/components
+- furniture.js
+- slideshow.js
