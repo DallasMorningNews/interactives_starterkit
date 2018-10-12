@@ -210,7 +210,7 @@ The interactives starterkit comes with a variety of image sizes and layouts preb
 | Inline | inline-block | N/A |
 | Left hang | left-block side-block | components/_side-blocks.scss |
 | Right hang | right-block side-block | components/_side-blocks.scss |
-| Double | wide-block double-block clearfix | N/A |
+| Double | wide-block double-block | N/A |
 | Video | see below | components/_videos.scss |
 
 ### Base image blocks
@@ -247,9 +247,14 @@ The double image block needs an additional image tag within the `image-block` el
 **HTML**
 ```html
 <div class="image-block wide-block double-block clearfix">
-  <img src="images/_defaultImage.jpg" alt="ALT TEXT GOES HERE. DO NOT LEAVE UNEDITED">
-  <img src="images/_defaultImage.jpg" alt="ALT TEXT GOES HERE. DO NOT LEAVE UNEDITED">
-  <p class="cutline">Proin pharetra massa quis turpis scelerisque, ut pharetra enim semper. Integer congue lacus felis, sit amet accumsan neque suscipit feugiat. Aenean pretium mattis felis, a suscipit neque posuere ac.</p>
+  <div>
+    <img src="images/_defaultImage.jpg" alt="ALT TEXT GOES HERE. DO NOT LEAVE UNEDITED">
+    <p class="cutline">Proin pharetra massa quis turpis scelerisque, ut pharetra enim semper. Integer congue lacus felis, sit amet accumsan neque suscipit feugiat. Aenean pretium mattis felis, a suscipit neque posuere ac.</p>
+  </div>
+  <div>
+    <img src="images/_defaultImage.jpg" alt="ALT TEXT GOES HERE. DO NOT LEAVE UNEDITED">
+    <p class="cutline">Proin pharetra massa quis turpis scelerisque, ut pharetra enim semper. Integer congue lacus felis, sit amet accumsan neque suscipit feugiat. Aenean pretium mattis felis, a suscipit neque posuere ac.</p>
+  </div>
 </div>
 ```
 ***
