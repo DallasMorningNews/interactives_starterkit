@@ -1,3 +1,6 @@
+@import '../_variables';
+@import '../_mixins';
+
 /*
 -------------------------------------------
 SIDE BLOCKS & INLINE BLOCKS
@@ -7,16 +10,18 @@ SIDE BLOCKS & INLINE BLOCKS
 .side-block {
   max-width: 400px;
   width: 100%;
-  font-family: Montserrat, Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", sans-serif;
+  font-family: $sans;
 }
 .side-block p {
-  font-family: Montserrat, Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
+  font-family: $sans;
+  @include type(1.4rem, 1.8rem, 1.2rem);
+  &.cutline {
+    font-size: 1.3rem;
+  }
 }
 .side-block h4, .side-block h5, .side-block h6 {
   font-weight: bold;
-  color: #212121;
+  color: $black33;
 }
 .side-block img {
   margin: 0 0 .3rem 0;
@@ -30,19 +35,13 @@ SIDE BLOCKS & INLINE BLOCKS
   float: left;
   margin: 0 4.8rem 4.8rem 0;
 }
-p.source {
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  color: #797470;
-  font-family: Montserrat, Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", sans-serif;
-}
 
 @media (max-width: 740px) {
   .right-block, .left-block {
     float: none;
     margin: 4.8rem auto 4.8rem;
     width: 100%;
-    max-width: 650px;
+    max-width: $contentWidth;
   }
   .graphic-block {
     max-width: 400px;

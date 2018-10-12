@@ -204,8 +204,8 @@ IV. CONTENT WELL
   position: relative;
   width: 90%;
 }
-.content-well p {
-  max-width: 650px;
+.content-well > p {
+  max-width: $contentWidth;
   font-size: 1.7rem;
   line-height: 2.4rem;
   font-family: "PT Serif", Georgia, Times, serif;
@@ -252,7 +252,7 @@ V. STORY HEAD, BYLINES AND INTRO
 }
 .byline-block {
   text-align: center;
-  max-width: 650px;
+  max-width: $contentWidth;
   margin: 0 auto;
 }
 .byline-block p {
@@ -349,75 +349,55 @@ VI. IMAGE, WIDE, FULL AND INLINE BLOCKS
 -------------------------------------------
 */
 .cutline {
-  font-family: Montserrat, Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", sans-serif;
-  font-size: 1.3rem;
-  line-height: 1.8rem;
+  font-family: $sans;
+  @include type(1.3rem, 1.8rem, 0);
   color: $black66;
 }
 .image-block {
   width: 100%;
-}
-.image-block img {
-  margin-bottom: .3rem;
-  width: 100%;
-}
-.inline-block {
-  max-width: 650px;
-  width: 100%;
-  margin: 4.8rem auto;
-  font-family: Montserrat, Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", sans-serif;
-}
-.inline-block p {
-  font-family: Montserrat, Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
-  &.cutline {
-    font-size: 1.3rem;
+  img {
+    margin-bottom: .3rem;
+    width: 100%;
   }
 }
-.inline-block h4 {
-  font-weight: 700;
-  color: #212121;
-}
-.inline-block img {
-  margin: 0 0 .3rem 0;
+.inline-block {
+  max-width: $contentWidth;
   width: 100%;
+  margin: 4.8rem auto;
+  font-family: $sans;
+  .cutline {
+    max-width: $contentWidth;
+  }
 }
 .wide-block, .full-block {
   margin: 4.8rem auto;
+  .cutline {
+    max-width: none;
+  }
 }
 .full-block p.cutline {
   padding: 0 2rem;
 }
-.double-block img {
-  float: left;
-  margin-right: 2%;
-  width: 49%;
-}
-.double-block img:last-of-type {
-  margin-right: 0;
+.double-block {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
 }
 .mug-block {
     max-width: 100px;
-    margin-left: calc((100% - 650px) / 2);
     float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-top: 5px;
-    .cutline {
-        @include type(1.3rem, 1.4rem, 0);
-    }
+    margin: 5px 20px 20px calc((100% - 650px) / 2);
 }
 @media (max-width: 740px) {
-  .double-block img {
-    float: none;
-    margin-right: 0;
-    width: 100%;
+  .double-block {
+    display: block;
+    div:first-of-type {
+      margin-bottom: 2.4rem;
+    }
   }
-
   .mug-block {
-      margin-left: 0;
-      max-width: 75px;
+    margin-left: 0;
+    max-width: 75px;
   }
 }
 
@@ -431,15 +411,13 @@ VII. CREDIT LINKS
 .credits {
   border-bottom: 1px solid #323232;
   margin: 6rem auto 0;
-  max-width: 650px;
+  max-width: $contentWidth;
   padding-bottom: 2.4rem;
 }
 .credits p {
-  display: block;
-  float: left;
-  font-family: Montserrat, Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  display: inline-block;
+  font-family: $sans;
+  @include type(1.2rem, 1.8rem, 0);
   margin: 0 2rem 0rem 0;
 }
 .credits a {
@@ -456,50 +434,50 @@ VIII. MORE LINKS
 
 .more {
   margin: 4.8rem auto 0;
-  max-width: 650px;
+  max-width: $contentWidth;
 }
 .more h5, .more p, .more a {
-  font-family: Montserrat, Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", sans-serif;
+  font-family: $sans;
 }
 .more h5 {
   font-weight: 700;
   margin-bottom: 2.4rem;
 }
+.more__grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
 .more a {
   color: #212121;
   display: block;
-  float: left;
-  margin-right: 5%;
-  width: 30%;
 }
 .more a:hover {
   text-decoration: none;
-}
-.more a:last-child {
-  margin-right: 0;
 }
 .more a img {
   margin-bottom: .3rem;
   width: 100%;
 }
 .more a p {
-  font-size: 1.3rem;
-  line-height: 1.8rem;
+  @include type(1.3rem, 1.8rem, 0);
   font-weight: 400;
-  letter-spacing: -.2px;
+  letter-spacing: -.1px;
 }
 
 @media (max-width: 600px) {
+  .more__grid {
+    display: block;
+  }
   .more a {
-    float: none;
     margin: 0 0 1.2rem;
     width: 100%;
     border-bottom: 1px solid $black215;
     padding-bottom: 1.2rem;
     &:last-of-type {
-        border-bottom: 0;
-        padding-bottom: 0;
-        margin-bottom: 0;
+      border-bottom: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
     }
   }
   .more a img {
@@ -512,8 +490,7 @@ VIII. MORE LINKS
     width: 63%;
   }
   .more a h6 {
-    margin-top: -.3rem;
-    margin-bottom: .6rem;
+    margin: -.3rem 0 .6rem;
     font-size: 1.3rem;
     line-height: 1.5rem;
   }
@@ -531,8 +508,8 @@ IX. ADS
 */
 
 .ad {
-  border-bottom: 1px solid #d7d7d7;
-  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid $black215;
+  border-top: 1px solid $black215;
   margin: 4.8rem 0;
   padding: 3.6rem 0;
   position: relative;
@@ -547,15 +524,14 @@ IX. ADS
   margin: 0 auto !important; }
 
 .ad p {
-  font-family: Montserrat, Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", sans-serif;
+  font-family: $sans;
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: .5rem !important; }
 
-
 @media (max-width: 767px) {
-    .ad {
-        margin: 2.4rem 0;
-        padding: 2.4rem 0;
-    }
+  .ad {
+    margin: 2.4rem 0;
+    padding: 2.4rem 0;
+  }
 }

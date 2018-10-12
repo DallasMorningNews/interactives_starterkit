@@ -67,14 +67,14 @@
 .footer-links {
     width: calc(100% - 65px);
     margin-left: 65px;
-    border-top: 1px solid rgb(235,235,235);
+    border-top: 1px solid $black235;
     position: relative;
     top: -15px;
     padding-top: 10px;
 }
 
 .interactive-footer a {
-  font-family: Montserrat, Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", sans-serif;
+  font-family: $sans;
   font-size: 12px;
   line-height: 20px;
   font-weight: 700;
@@ -83,19 +83,16 @@
 }
 
 .interactive-footer p {
-    font-family:"PT Serif", Georgia, serif;
+    font-family:$serif;
     font-style: italic;
     font-size: 12px;
     line-height: 20px;
-    color: rgb(121,121,121);
+    color: $black121;
     float: right;
 }
 
 .footer-links a {
-    -webkit-transition: all .2s ease-out;
-    -moz-transition: all .2s ease-out;
-    -o-transition: all .2s ease-out;
-    transition: all .2s ease-out;
+  @include transition(all, .2s, ease-out);
 }
 
 .footer-links a:hover {

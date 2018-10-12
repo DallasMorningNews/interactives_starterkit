@@ -1,7 +1,10 @@
+@import '../_variables';
+@import '../_mixins';
+
 .subscribe-cta {
  width: 100%;
- max-width: 650px;
- margin: 4.8rem auto 4.8rem;
+ max-width: $contentWidth;
+ margin: 4.8rem auto;
  padding: 4.8rem 0;
  border-bottom: 1px solid $black215;
  border-top: 1px solid $black215;
