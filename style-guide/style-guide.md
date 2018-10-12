@@ -323,7 +323,7 @@ Setting up a slideshow in the interactives starterkit is a multi-step process, d
 
 1. Collect and size all your photos as you normally would for an interactive. It's helpful if photos are the same dimensions, so it's recommended to take any vertical photos and save them as horizontal on a white mat.
 2. Add `@import "components/_slideshows.scss";` to your **styles.scss** file.
-3. Add `import './slideshow.js';` to your **scripts.js** file.
+3. Add `import './slideshow';` to your **scripts.js** file.
 4. Install the **imagesloaded** plugin via npm with `npm install imagesloaded --save` at your project root level in the command line.
 5. Install the **hammer.js** plugin via npm with `npm install hammerjs --save` at your project root level in the command line to provide swipe support.
 6. Fill out [this form](http://interactives.dallasnews.com/tools/easyslide/_) to gather your slideshow html markup and place in your index.html file.
