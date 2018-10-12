@@ -144,8 +144,8 @@ The interactives color palette is divided in to two sub palettes, blacks and col
 ### Primary blacks
 Primary blacks are the blacks used most often and serve as a starting point when choosing which black to use.
 
-| Swatch | Name | Hex | SCSS Variable
-| : ---- | :--- | :-- | :------------
+| Swatch | Name | Hex | SCSS Variable |
+| :----- | :--- | :-- | :------------ |
 | ![#212121](https://placehold.it/15/212121/000000?text=+) | Primary black | #212121 | $black33 |
 | ![#212121](https://placehold.it/15/323232/000000?text=+) | Brand black | #323232 | $black50 |
 | ![#f5f5f5](https://placehold.it/15/f5f5f5/000000?text=+) | Primary gray | #f5f5f5 | $black245 |
@@ -153,8 +153,8 @@ Primary blacks are the blacks used most often and serve as a starting point when
 ### Secondary blacks
 Secondary blacks offer a wide variety of blacks and shades of gray between our primary black and our primary gray.
 
-| Swatch | Name | Hex | SCSS Variable
-| : ---- | :--- | :-- | :------------
+| Swatch | Name | Hex | SCSS Variable |
+| :----- | :--- | :-- | :------------ |
 | ![#424242](https://placehold.it/15/424242/000000?text=+) | Black 66 | #424242 | $black66 |
 | ![#797979](https://placehold.it/15/797979/000000?text=+) | Black 121 | #797979 | $black121 |
 | ![#d7d7d7](https://placehold.it/15/d7d7d7/000000?text=+) | Black 215 | #d7d7d7 | $black215 |
@@ -163,16 +163,16 @@ Secondary blacks offer a wide variety of blacks and shades of gray between our p
 ### Non-chart Colors
 Non chart colors define colors on elements outside of data visualizations, such as links, branding and table bars.
 
-| Swatch | Name | Hex | SCSS Variable
-| : ---- | :--- | :-- | :------------
+| Swatch | Name | Hex | SCSS Variable |
+| :----- | :--- | :-- | :------------ |
 | ![#0185d3](https://placehold.it/15/0185d3/000000?text=+) | DMN Blue | #0185d3 | $dmnblue |
 | ![#efebde](https://placehold.it/15/efebde/000000?text=+) | Table Tan | #efebde | $tableBar |
 
 ### Chart Colors
 Data visualizations should make use of the colors below for displaying data. Preference in color usage is from left to right, but, is not set in stone. Use what works best for your visualization.
 
-| Swatch | Name | Hex | SCSS Variable
-| : ---- | :--- | :-- | :------------
+| Swatch | Name | Hex | SCSS Variable |
+| :----- | :--- | :-- | :------------ |
 | ![#329ce8](https://placehold.it/15/329ce8/000000?text=+) | Chart blue | #329ce8 | $chartBlue |
 | ![#e34e36](https://placehold.it/15/e34e36/000000?text=+) | Chart red | #e34e36 | $chartRed |
 | ![#ff8f24](https://placehold.it/15/ff8f24/000000?text=+) | Chart orange | #ff8f24 | $chartOrange |
@@ -204,7 +204,7 @@ Image and video blocks
 The interactives starterkit comes with a variety of image sizes and layouts prebuilt into the stylesheet. All that is required is adding the appropriate class names to the `<div class="image-block">` element, and in some cases, importing some additional component stylesheets. Reference the chart below:
 
 | Type | Class list | CSS Import list |
-| :--- | :--------- | :----------
+| :--- | :--------- | :-------------- |
 | Full | full-block | N/A |
 | Wide | wide-block | N/A |
 | Inline | inline-block | N/A |
@@ -292,7 +292,7 @@ There are a few other miscellaneous elements prebuilt into the starter kit that 
 Breakouts allow for columned layouts of elements in groups of two, three and four. These can be useful for small, alike text chunks or character profiles. All of the breakout modules take a `breakout__module` class on the parent div, along with the class specified in the table below:
 
 | Type | Class list | CSS Import list |
-| :--- | :--------- | :----------
+| :--- | :--------- | :-------------- |
 | Two-up | breakout--two | components/_breakouts.scss |
 | Three-up | breakout--three | components/_breakouts.scss |
 | Four-up | breakout--four | components/_breakouts.scss |
@@ -337,7 +337,7 @@ $('#my-slideshow').easyslide();
 As discussed above in the pullquote elements, there are sideblock elements that allow you to place small pieces of content to the left and right of the content well. All of the side-block elements contain the class `side-block` on the parent element. These can be used in conjunction with other elements, such as pullquotes, charts, etc. These elements progress into the copy as the screen gets smaller, and finally, fall inline on the smallest of screens.
 
 | Type | Class list | CSS Import list |
-| :--- | :--------- | :----------
+| :--- | :--------- | :-------------- |
 | Left | left-block | components/_side-blocks.scss |
 | Right | right-across | components/_side-blocks.scss |
 
