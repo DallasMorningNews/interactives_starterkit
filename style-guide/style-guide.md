@@ -326,7 +326,7 @@ Setting up a slideshow in the interactives starterkit is a multi-step process, d
 3. Add `import './slideshow';` to your **scripts.js** file.
 4. Install the **imagesloaded** plugin via npm with `npm install imagesloaded --save` at your project root level in the command line.
 5. Install the **hammer.js** plugin via npm with `npm install hammerjs --save` at your project root level in the command line to provide swipe support.
-6. Fill out [this form](https://github.com/DallasMorningNews/easyslide) to gather your slideshow html markup and place in your index.html file.
+6. Fill out [this form](http://interactives.dallasnews.com/tools/easyslide/) to gather your slideshow html markup and place in your index.html file.
 7. In your **scripts.js** file, call `easyslide` on the id of your slideshow html element like so:
 ```js
 $('#my-slideshow').easyslide();
