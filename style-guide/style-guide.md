@@ -259,6 +259,16 @@ The double image block needs an additional image tag within the `image-block` el
 ```
 ***
 
+### Mug blocks
+Used to inset a mug-sized photo inside the column well.
+**HTML**
+```html
+<div class="image-block mug-block">
+  <img src="images/_defaultImage.jpg" alt="" />
+  <p class="cutline">Name</p>
+</div>
+```
+
 ### Video blocks
 Video blocks are our standard code block to handle youtube video embeds. They take a slightly different markup as other image blocks to accommodate for making the video embed responsive and require the video's unique id to be included in the iframe src attribute.
 
