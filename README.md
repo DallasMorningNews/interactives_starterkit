@@ -1,10 +1,10 @@
 # interactives_starterkit
 
-####Style guide
+#### Style guide
 
 Our interactives style guide can be found at [here](https://github.com/DallasMorningNews/interactives_starterkit/blob/master/style-guide/style-guide.md).
 
-####Ads
+#### Ads
 
 The code that runs ads is in the head section of the index.html file. There is code for three ad positions for both large and small screens provided, though the second and third positions are noted out by default. Every interactive should have at least one ad, and if length of the interactive warrants a second and third ad.
 
