@@ -169,7 +169,7 @@ Non chart colors define colors on elements outside of data visualizations, such 
 | ![#efebde](https://placehold.it/15/efebde/000000?text=+) | Table Tan | #efebde | $tableBar |
 
 ### Chart Colors
-Data visualizations should make use of the colors below for displaying data. Preference in color usage is from left to right, but, is not set in stone. Use what works best for your visualization.
+Data visualizations should make use of the colors below for displaying data. Preference in color usage is from top to bottom, but, is not set in stone. Use what works best for your visualization.
 
 | Swatch | Name | Hex | SCSS Variable |
 | :----- | :--- | :-- | :------------ |
