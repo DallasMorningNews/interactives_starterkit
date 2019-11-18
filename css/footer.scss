@@ -1,23 +1,57 @@
-@import "_variables.scss";
-@import "_mixins.scss";
+$footer-height-base: 14.4rem;
+$footer-height-1000: 18.3rem;
+$footer-height-700: 24.1rem;
 
+// ====================================================
+// FOOTER STYLES
+// ====================================================
+
+
+// this is to keep the footer at the bottom of the page
+
+.content-wrapper {
+  min-height: 100%;
+  margin-bottom: calc(#{$footer-height-base} * -1);
+  @media (max-width: 1000px) {
+    margin-bottom: calc(#{$footer-height-1000} * -1);
+  }
+  @media (max-width: 700px) {
+    margin-bottom: calc(#{$footer-height-700} * -1);
+  }
+  &:after {
+    content: '';
+    display: block;
+  }
+}
+
+.interactive-footer, .content-wrapper:after {
+  height: $footer-height-base;
+  @media (max-width: 1000px) {
+    height: $footer-height-1000
+  }
+  @media (max-width: 700px) {
+    height: $footer-height-700;
+  }
+}
+
+// end sticky footer
 
 .interactive-footer {
-  min-height: 97px;
-  padding-bottom: 24px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  padding: 2.4rem 0;
+  width: 90%;
   display: block;
+  max-width: 1400px;
+  margin: 0 auto;
+  z-index: 60;
 }
 
 .footer-content {
-    max-width: 1400px;
-    width: 90%;
-    margin: 0 auto;
-    img {
-        max-width: 225px;
-    }
+  img {
+      position: relative;
+      top: 15px;
+      width: 225px;
+      height: 24px;
+  }
 }
 
 .footer-social {
@@ -65,34 +99,37 @@
 }
 
 .footer-links {
-    width: calc(100% - 65px);
-    margin-left: 65px;
-    border-top: 1px solid $black235;
+    border-top: 1px solid rgb(235,235,235);
     position: relative;
-    top: -15px;
     padding-top: 10px;
+    margin-top: 20px;
 }
 
 .interactive-footer a {
-  font-family: $sans;
+  font-family: Montserrat, Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", sans-serif;
   font-size: 12px;
   line-height: 20px;
-  font-weight: 700;
+  font-weight: normal;
+  font-weight: bold;
   color: rgb(50,50,50);
   cursor: pointer;
 }
 
 .interactive-footer p {
-    font-family:$serif;
+    font-family:"PT Serif", Georgia, serif;
     font-style: italic;
     font-size: 12px;
     line-height: 20px;
-    color: $black121;
+    color: rgb(121,121,121);
     float: right;
+    margin-bottom: .6rem;
 }
 
 .footer-links a {
-  @include transition(all, .2s, ease-out);
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
 }
 
 .footer-links a:hover {
@@ -109,11 +146,6 @@
 }
 
 @media (max-width: 1150px) {
-    .footer-content {
-        img {
-            width: 150px;
-        }
-    }
     .footer-social {
         top: 5px;
     }
@@ -146,13 +178,16 @@
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
     .footer-content {
         img {
-            width: 125px;
+            width: 200px;
+            height: 21.3px;
             position: relative;
-            top: 5px;
         }
+    }
+    .footer-social {
+      display: none;
     }
     .footer-links {
         top: 10px;

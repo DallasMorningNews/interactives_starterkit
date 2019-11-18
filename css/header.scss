@@ -15,21 +15,21 @@
 }
 
 .logo {
-  background-image: url('//interactives.dallasnews.com/common/templates/v1.0/images/_dmn_logo.svg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: left center;
-  opacity: .85;
-  display: block;
-  height: 40px;
-  width: 155.4px;
-  float: left;
-  cursor: pointer;
-  @include transition(all, .25s, ease-out);
-  &:hover {
-      opacity: 1;
+    background-image: url('//interactives.dallasnews.com/common/templates/v1.0/images/tdmn-white.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: left center;
+    opacity: 1;
+    display: block;
+    height: 40px;
+    width: 200px;
+    float: left;
+    cursor: pointer;
+    @include transition(all, .25s, ease-out);
+    &:hover {
+        opacity: 1;
+    }
   }
-}
 
 .sr-only {
   position: absolute;
