@@ -44,7 +44,7 @@ The meta.json file drives many of the metadata aspects of interactive projects, 
 
 | Field | Format | Purpose |
 |-------|--------|---------|
-
+|Id|String|Randomly-generated unique id number for the project. The generator will create one of these for you, but, each page in a project needs a unique id number, so you may have to hand edit any id numbers for additional pages|     
 
 "id": randomly-generated unique id number for the project (string)
  "name": project name (string) which assigns the directory the project lives in on AWS. 
