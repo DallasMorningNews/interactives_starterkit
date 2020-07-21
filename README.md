@@ -52,7 +52,7 @@ The meta.json file drives many of the metadata aspects of interactive projects, 
 |tweetText|String|Used to set the tweet text for the project|
 |publishYear|Integer|Year in which project is published|
 |publishDate|String|Date and time of publication (example "2020-07-14T12:00:00Z”)|
-|url|String|The final url of the project. It's comprised of "https://interactives.dallasnews.com/<<publishYear>>/<<name>>|
+|url|String|The final url of the project. It's comprised of "https://interactives.dallasnews.com/[[publishYear]]/[[name]]|
 |authors|Array of strings|List of author names. Names should match how authors are listed in parsely|
 |desk|String|The originating desk (News, Sports, Business, etc)|
 |section|String|The section the story would fall in if in Arc. (Crime, Politics, Cowboys, Real Estate, etc)|
