@@ -40,28 +40,26 @@ The app also pulls in static assets:
 
 ## Updating the meta.json file
 
-The meta.json file drives many of the metadata aspects of interactive projects, along with setting the proper year and directory for interactives to publish into on AWS. Below is a breakdown of the fields, their formats, and what they are used for.
+The meta.json file drives many of the metadata aspects of interactive projects, along with setting the proper year and directory for interactives to publish into on AWS. Below is a breakdown of the fields, their formats, and what they are used for. Many of the attributes in this json file are used to populate attributes of various tags in the index.html file. See templating tags in index.html that correspond to keys in the meta.json file.
 
 | Field | Format | Purpose |
 |-------|--------|---------|
-|Id|String|Randomly-generated unique id number for the project. The generator will create one of these for you, but, each page in a project needs a unique id number, so you may have to hand edit any id numbers for additional pages|     
-
-"id": randomly-generated unique id number for the project (string)
- "name": project name (string) which assigns the directory the project lives in on AWS. 
- "pageTitle": text of projects page title meta tag (string)
- "shareTitle": text for social media share card titles (string)
- "shareText": text for social media share text (string)
- "tweetText": text for tweets (string)
- "publishYear": year in which project is published (integer)
- "publishDate": date and time of publication, string (example ‘2020-07-14T12:00:00Z”)
- "url": the final url of the project. (string),
- "authors": comma separated array of author names. Author names should match how they are in parsely,
- "desk": the originating desk (news, sports, business, etc) (string)
- "section": the section (crime, politics, cowboys, real estate, etc) (string),
- "keywords": comma separated array of keywords. “Interactives” should always be included, but also whatever tags the story would have had had it been published in Arc. 
- "imgURL": The url of the share image. This should always be found in the images directory of the project (string)
- "imgWidth": width of share image. Should always be “1200”, per facebook’s recommendations (string),
- "imgHeight": height of share image. Should always be “630”, per facebook’s recommendations (string),
- "sectionTwitter": the twitter handle of the section story belongs to, without the “@” symbol. dallasnews is a good default (string),
- "authorTwitter": author’s twitter handle, without the “@” (string),
- "authorFBProfile": url to author’s facebook profile if public. If not, leave as an empty string (string)
+|id|String|Randomly-generated unique id number for the project. The generator will create one of these for you, but, each page in a project needs a unique id number, so you may have to hand edit any id numbers for additional pages|     
+|name|String|Created when the project is initialized using the yeoman generator, this is the name of the directory in which the project will live on AWS|
+|pageTitle|String|Populates the page's page title metadata attribute|
+|shareTitle|String|Used to set the page's social media card title|
+|shareText|String|Used to set the page's social media description text|
+|tweetText|String|Used to set the tweet text for the project|
+|publishYear|Integer|Year in which project is published|
+|publishDate|String|Date and time of publication (example "2020-07-14T12:00:00Z”)|
+|url|String|The final url of the project. It's comprised of "https://interactives.dallasnews.com/<<publishYear>>/<<name>>|
+|authors|Array of strings|List of author names. Names should match how authors are listed in parsely|
+|desk|String|The originating desk (News, Sports, Business, etc)|
+|section|String|The section the story would fall in if in Arc. (Crime, Politics, Cowboys, Real Estate, etc)|
+|keywords|Array of strings|List of tags for the interactive to be listed under in Parsely “interactives” should always be included, but also whatever tags the story would have had had it been published in Arc|
+|imgURL|String|The url of the share image. This should always be found in the images directory of the project|
+|imgWidth|String|Width of share image. Should always be “1200”, per facebook’s recommendations|
+|imgHeight|String|Height of share image. Should always be “630”, per facebook’s recommendations|
+|sectionTwitter|String|The twitter handle of the section story belongs to, without the “@” symbol. dallasnews is a good default, but more section-specific projects should use that section's twitter handle if they have one|
+|authorTwitter|String|Author’s twitter handle, without the “@”|
+|authorFBProfile|Strin|Url to author’s facebook profile if public. If not, leave as an empty string|
